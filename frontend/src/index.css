@@ -6,7 +6,9 @@
 }
 
 @theme {
-    --font-space: 'Space Mono', monospace; }
+    --font-space: 'Space Mono', monospace;
+    --font-manrope: "Manrope", sans-serif;
+        }
 
 body {
     background-color: #FEF7FF;
