@@ -99,7 +99,7 @@ export const Footer = () => {
       </p>
 
       {/* Social media links */}
-      <div className="mx-5 mt-8 mb-2 flex space-x-11 text-2xl">
+      <div className="mx-5 mt-8 mb-2 flex items-center justify-between text-2xl">
         {socialLinks.map(({ href, label, icon }) => (
           <a
             key={label}

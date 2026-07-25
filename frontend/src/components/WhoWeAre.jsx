@@ -23,7 +23,7 @@ export const WhoWeAre = () => {
         </a>
       </div>
 
-        <div className="card my-20 bg-[#7C3AED] px-2 py-5 text-white">
+        <div className="card my-20 bg-[#7C3AED] px-1.75 py-5 text-white">
             <div className="mx-auto w-[60%] -translate-x-4">
                 <h1 className="text-3xl">
                 Ready to Build Your Product?
