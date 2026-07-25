@@ -5,6 +5,7 @@ import { FeatureProjects } from "./components/FeatureProjects"
 import { WhyHireInHouse } from "./components/WhyHireInHouse"
 import { Footer } from "./components/Footer"
 import { NavBar } from "./components/NavBar"
+import { WhoWeAre } from "./components/WhoWeAre"
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
       <HowWeWork />
       <FeatureProjects />
       <WhyHireInHouse />
+      <WhoWeAre />
       <Footer />
     </>
   )
