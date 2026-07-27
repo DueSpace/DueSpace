@@ -1,101 +1,98 @@
-import React from 'react'
+import { TbMessageForward } from "react-icons/tb";
+import { LuCalendar, LuClock4 } from "react-icons/lu";
+import { AiOutlineTeam } from "react-icons/ai";
 
 // Asset Imports
-import Mmachi from '../assets/MmachiBrand.png'
-import Beacon from '../assets/BeaconAcademy.png'
-import Did from '../assets/Did.png'
-import Outcome from '../assets/Outcome.png'
-import Team from '../assets/Team.png'
-import Timeline from '../assets/Timeline.png'
+import Mmachi from "../assets/MmachiBrand.png";
+import Beacon from "../assets/BeaconAcademy.png";
 
 /**
  * Single source of truth for project metadata and content.
  */
 const PROJECTS_DATA = [
   {
-    id: 'mmachi-financials',
-    title: 'Mmachi Financials Brand Identity',
-    badgeText: 'Brand Delivered',
+    id: "mmachi-financials",
+    title: "Mmachi Financials Brand Identity",
+    badgeText: "Brand Delivered",
     imageSrc: Mmachi,
-    imageAlt: 'Mmachi Financials',
+    imageAlt: "Mmachi Financials",
     details: [
       {
-        icon: Timeline,
-        label: 'Timeline',
-        value: '10 Days',
+        icon: LuClock4,
+        label: "Timeline",
+        value: "10 Days",
       },
       {
-        icon: Team,
-        label: 'Team',
-        value: '1 Brand Designer, 1 Graphic Designer, 1 PM',
+        icon: AiOutlineTeam,
+        label: "Team",
+        value: "1 Brand Designer, 1 Graphic Designer, 1 PM",
       },
       {
-        icon: Did,
-        label: 'What We Did',
-        value: 'Brand Strategy, Visual Identity, Logo Design',
+        icon: LuCalendar,
+        label: "What We Did",
+        value: "Brand Strategy, Visual Identity, Logo Design",
       },
       {
-        icon: Outcome,
-        label: 'Outcome',
+        icon: TbMessageForward,
+        label: "Outcome",
         value:
-          'Delivered A Complete Visual Identity System That Positioned The Startup For Launch Across Digital And Print Platforms.',
+          "Delivered A Complete Visual Identity System That Positioned The Startup For Launch Across Digital And Print Platforms.",
       },
     ],
   },
   {
-    id: 'beacon-academy',
+    id: "beacon-academy",
     title: "The Beacon Academy's Website",
-    badgeText: 'Work Delivered',
+    badgeText: "Work Delivered",
     imageSrc: Beacon,
-    imageAlt: 'Beacon Academy',
+    imageAlt: "Beacon Academy",
     details: [
       {
-        icon: Timeline,
-        label: 'Timeline',
-        value: '2 Weeks',
+        icon: LuClock4,
+        label: "Timeline",
+        value: "2 Weeks",
       },
       {
-        icon: Team,
-        label: 'Team',
-        value: '2 Developers, 1 Project Manager',
+        icon: AiOutlineTeam,
+        label: "Team",
+        value: "2 Developers, 1 Project Manager",
       },
       {
-        icon: Did,
-        label: 'What We Did',
+        icon: LuCalendar,
+        label: "What We Did",
         value:
-          'Designed A Responsive, User-Friendly Website With Intuitive Navigation And A Premium Visual Identity',
+          "Designed A Responsive, User-Friendly Website With Intuitive Navigation And A Premium Visual Identity",
       },
       {
-        icon: Outcome,
-        label: 'Outcome',
-        value:'Delivered A Professional Platform That Enhances Brand Presence, Improves User Experience, And Drives Student Engagement.',
+        icon: TbMessageForward,
+        label: "Outcome",
+        value:
+          "Delivered A Professional Platform That Enhances Brand Presence, Improves User Experience, And Drives Student Engagement.",
       },
     ],
   },
-]
+];
 
 /**
  * Sub-component to render individual detail rows cleanly.
  */
-const DetailRow = ({ icon, label, value }) => (
+const DetailRow = ({ icon: Icon, label, value }) => (
   <div className="flex items-start">
     {/* Left Column: Icon + Label */}
     <div className="flex w-36 shrink-0 items-center gap-1.5 text-[0.9rem] text-black/60">
-      <img
-        src={icon}
-        alt=""
+      <Icon
         aria-hidden="true"
-        className="h-7 w-7 object-contain opacity-70"
+        className="h-7 w-7 opacity-70"
       />
       <span>{label}</span>
     </div>
 
     {/* Right Column: Value Description */}
-    <div className="ml-6 mt-1 text-black/60 leading-snug">
+    <div className="ml-6 mt-1 leading-snug text-black/60">
       {value}
     </div>
   </div>
-)
+);
 
 /**
  * Reusable card wrapper for each project.
@@ -118,8 +115,8 @@ const ProjectCard = ({ project }) => (
         <h3 className="text-sm font-semibold text-black">
           {project.title}
         </h3>
-        {/* Restored rounded-full for card badges */}
-        <span className="badge badge-outline rounded-full shrink-0 border border-[#FFC100] px-3 py-3 text-sm text-[#FFC100]">
+
+        <span className="badge badge-outline shrink-0 rounded-full border border-[#FFC100] px-3 py-3 text-sm text-[#FFC100]">
           {project.badgeText}
         </span>
       </div>
@@ -137,7 +134,7 @@ const ProjectCard = ({ project }) => (
       </div>
     </div>
   </article>
-)
+);
 
 /**
  * Main FeatureProjects Section
@@ -145,7 +142,7 @@ const ProjectCard = ({ project }) => (
 export const FeatureProjects = () => {
   return (
     <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans">
-      {/* Section Header with Restored rounded-full Pill */}
+      {/* Section Header */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
           FEATURED PROJECT
@@ -163,5 +160,5 @@ export const FeatureProjects = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

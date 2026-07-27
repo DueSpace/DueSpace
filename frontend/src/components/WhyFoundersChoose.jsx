@@ -32,10 +32,10 @@ const AdvantageItem = ({ advantage, isLast }) => (
   <div className="relative flex gap-4">
     {/* bullet point + line */}
     <div className="relative flex flex-col items-center">
-      <div className="z-10 h-[10px] w-[10px] shrink-0 rounded-full bg-[#7C3AED] mt-[7px]" />
+      <div className="z-10 h-2.5 w-2.5 shrink-0 rounded-full bg-[#7C3AED] mt-1.75" />
 
       {!isLast && (
-        <div className="absolute h-[200px] w-[6px] bg-[#7C3AED]/20 mt-[7px]" />
+        <div className="absolute h-50 w-1.5 bg-[#7C3AED]/20 mt-1.75" />
       )}
     </div>
 
