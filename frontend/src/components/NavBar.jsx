@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa6";
 export const NavBar = () => {
   return (
     // Main navigation header
-    <header className="mx-auto my-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans">
+    <header className="mx-auto mt-5 mb-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans">
       
       {/* Company logo */}
       <img
