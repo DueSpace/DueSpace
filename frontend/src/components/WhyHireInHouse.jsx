@@ -29,35 +29,34 @@ export const WhyHireInHouse = () => {
       </div>
 
       {/* Section Heading */}
-      <h2 className="mb-6 text-xl font-bold text-gray-900">
+      <h2 className="mb-6 text-[20px] font-bold text-gray-900">
         DueSpace Vs Traditional Hiring
       </h2>
 
       {/* Comparison Container */}
       <div className="flex text-sm">
-
         {/* Traditional Hiring Column */}
         <div className="w-full rounded-l-2xl bg-white px-2 pt-1 pb-2.5">
-          <h3 className="my-3 text-lg font-bold">Traditional Hiring</h3>
+          <h3 className="my-3 text-[14px] font-bold">Traditional Hiring</h3>
 
           {traditionalHiring.map((item) => (
             <div key={item} className="my-3.5 flex items-center">
               <HiXMark className="my-0.5 size-5 text-[#F97316]" />
-              <p className="text-[#0000009C]">{item}</p>
+              <p className="text-[#0000009C] text-[11px]">{item}</p>
             </div>
           ))}
         </div>
 
         {/* DueSpace Column */}
         <div className="w-full rounded-r-2xl bg-[#7C3AED26] px-2 pt-1 pb-2.5">
-          <h3 className="my-3 text-lg font-bold text-[#7C3AEDF2]">
+          <h3 className="my-3 text-[14px] font-bold text-[#7C3AEDF2]">
             With DueSpace
           </h3>
 
           {dueSpaceBenefits.map((item) => (
             <div key={item} className="my-3.5 flex items-center">
               <HiCheck className="my-0.5 size-5 text-[#7C3AEDF2]" />
-              <p>{item}</p>
+              <p className="text-[11px]">{item}</p>
             </div>
           ))}
         </div>
