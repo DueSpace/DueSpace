@@ -40,9 +40,7 @@ export const WhoWeAre = () => {
         {/* Content wrapper (keeps alignment slightly left of center) */}
         <div className="mx-auto w-[60%] -translate-x-4">
           {/* CTA Heading */}
-          <h3 className="text-3xl">
-            Ready to Build Your Product?
-          </h3>
+          <h3 className="text-3xl">Ready to Build Your Product?</h3>
 
           {/* CTA Description */}
           <p className="mt-2.5">
@@ -53,7 +51,7 @@ export const WhoWeAre = () => {
           {/* CTA Button */}
           <button
             type="button"
-            className="btn mt-4 w-[90%] rounded-xl border-none bg-white text-lg text-black"
+            className="btn mt-4 w-[90%] rounded-xl border-none bg-white text-[16px] text-black"
           >
             Start a Project
             <RiArrowRightLongFill className="inline-block size-6" />

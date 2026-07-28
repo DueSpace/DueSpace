@@ -225,17 +225,17 @@ const WorkStep = ({ step, isLast }) => {
       <div className="flex items-stretch gap-4">
         {/* numbered circle + connecting line */}
         <div className="relative flex flex-col items-center">
-          <div className="z-10 flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-full bg-[#7C3AED] text-sm font-bold text-white">
+          <div className="z-10 flex h-7.5 w-7.5 shrink-0 items-center justify-center rounded-full bg-[#7C3AED] text-sm font-bold text-white">
             {step.number}
           </div>
 
           {!isLast && (
-            <div className="absolute top-[30px] h-[calc(100%+1.5rem)] border-l-2 border-dashed border-[#7C3AED]/20" />
+            <div className="absolute top-7.5 h-[calc(100%+1.5rem)] border-l-2 border-dashed border-[#7C3AED]/20" />
           )}
         </div>
 
         {/* white background card with content and icon */}
-        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-[10px] shadow-sm backdrop-blur-sm w-[19.875rem] h-[5.25rem]">
+        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-2.5 shadow-sm backdrop-blur-sm w-79.5 h-21">
           <div className="flex-1">
             <h3 className="mb-2 text-[15px] font-bold leading-tight text-black">
               {step.title}
@@ -247,7 +247,7 @@ const WorkStep = ({ step, isLast }) => {
 
           {/* icon box */}
           <div
-            className="flex h-[1.875rem] w-[1.875rem] shrink-0 items-center justify-center rounded-2xl m-auto"
+            className="flex h-7.5 w-7.5 shrink-0 items-center justify-center rounded-2xl m-auto"
             style={{ backgroundColor: step.iconBg }}
           >
             <IconComponent />
