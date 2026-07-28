@@ -1,28 +1,124 @@
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import Due from "../assets/DueSpace.png";
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
 export const NavBar = () => {
-  return (
-    // Main navigation header
-    <header className="mx-auto mt-5 mb-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans">
-      
-      {/* Company logo */}
-      <img
-        src={Due}
-        alt="DueSpace Logo"
-        className="w-25"
-      />
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-      {/* Mobile navigation menu button */}
-      <nav>
-        <button
-          type="button"
-          aria-label="Open navigation menu"
-          className="cursor-pointer"
-        >
-          <FaBars className="text-xl" />
-        </button>
-      </nav>
-    </header>
+  // Prevent scrolling when full-screen navbar is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // Close navbar on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Why Us", path: "/#why-us" },
+    { name: "How We Work", path: "/#how-we-work" },
+    { name: "Projects", path: "/#projects" },
+    { name: "Who We Are", path: "/#who-we-are" },
+  ];
+
+  return (
+    <>
+      {/* Original Main Navigation Header */}
+      <header className="mx-auto mt-5 mb-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans relative z-40">
+        {/* Company logo */}
+        <Link to="/">
+          <img src={Due} alt="DueSpace Logo" className="w-25" />
+        </Link>
+
+        {/* Mobile navigation menu button */}
+        <nav>
+          <button
+            type="button"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open navigation menu"
+            className="cursor-pointer"
+          >
+            <FaBars className="text-xl" />
+          </button>
+        </nav>
+      </header>
+
+      {/* Full-Screen Overlay Navbar with Framer Motion */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-100%" }}
+            transition={{ duration: 0.4, ease: [0.32, 0.72, 0, 1] }}
+            className="fixed inset-0 z-50 flex flex-col justify-between bg-[#FEF7FF] px-6 py-8 font-sans"
+          >
+            {/* Header inside overlay maintaining exact header layout */}
+            <div className="mx-auto flex w-[95%] max-w-2xl items-center justify-between py-3 pr-3">
+              <Link to="/" onClick={() => setIsOpen(false)}>
+                <img src={Due} alt="DueSpace Logo" className="w-25" />
+              </Link>
+
+              <button
+                type="button"
+                onClick={() => setIsOpen(false)}
+                aria-label="Close navigation menu"
+                className="cursor-pointer p-1 text-slate-800 hover:text-[#7C3AED] transition-colors"
+              >
+                <FaXmark className="text-2xl" />
+              </button>
+            </div>
+
+            {/* Menu Links */}
+            <div className="mx-auto my-auto flex w-[95%] max-w-2xl flex-col items-start space-y-6">
+              <span className="font-space text-xs font-bold text-[#7C3AED] uppercase tracking-widest">
+                Navigation
+              </span>
+              <ul className="w-full space-y-5">
+                {navLinks.map((link, index) => (
+                  <motion.li
+                    key={link.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + index * 0.05, duration: 0.3 }}
+                  >
+                    <Link
+                      to={link.path}
+                      onClick={() => setIsOpen(false)}
+                      className="block text-3xl md:text-4xl font-bold text-slate-900 hover:text-[#7C3AED] transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Footer inside overlay */}
+            <div className="mx-auto flex w-[95%] max-w-2xl items-center justify-between border-t border-slate-200 pt-6 text-sm text-slate-500 font-sans">
+              <p>© {new Date().getFullYear()} DueSpace</p>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-[#7C3AED] font-medium hover:underline"
+              >
+                Close Menu
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
