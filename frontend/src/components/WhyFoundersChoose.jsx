@@ -35,7 +35,7 @@ const AdvantageItem = ({ advantage, isLast }) => (
       <div className="z-10 h-2.5 w-2.5 shrink-0 rounded-full bg-[#7C3AED] mt-1.75" />
 
       {!isLast && (
-        <div className="absolute h-50 w-1.5 bg-[#7C3AED]/20 mt-1.75" />
+        <div className="absolute h-60 w-1.5 bg-[#7C3AED]/20 mt-1.75" />
       )}
     </div>
 
