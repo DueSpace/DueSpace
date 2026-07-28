@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { StructuredProductTeams } from "../components/StructuredProductTeams";
 import { WhyFoundersChoose } from "../components/WhyFoundersChoose";
 import { HowWeWork } from "../components/HowWeWork";
 import { FeatureProjects } from "../components/FeatureProjects";
@@ -16,6 +17,7 @@ export const HomeClient = () => {
       transition={{ duration: 0.35, ease: "easeOut" }}
       className="w-full"
     >
+      <StructuredProductTeams />
       <WhyFoundersChoose />
       <HowWeWork />
       <FeatureProjects />
