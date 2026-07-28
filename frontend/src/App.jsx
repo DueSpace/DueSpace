@@ -1,23 +1,28 @@
-// import { motion } from "framer-motion"
-import { WhyFoundersChoose } from "./components/WhyFoundersChoose"
-import { HowWeWork } from "./components/HowWeWork"
-import { FeatureProjects } from "./components/FeatureProjects"
-import { WhyHireInHouse } from "./components/WhyHireInHouse"
-import { Footer } from "./components/Footer"
-import { NavBar } from "./components/NavBar"
-import { WhoWeAre } from "./components/WhoWeAre"
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import { NavBar } from "./components/NavBar";
+import { HomeClient } from "./pages/HomeClient";
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<HomeClient />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
-  return(
+  return (
     <>
       <NavBar />
-      <WhyFoundersChoose />
-      <HowWeWork />
-      <FeatureProjects />
-      <WhyHireInHouse />
-      <WhoWeAre />
-      <Footer />
+      <AnimatedRoutes />
     </>
-  )
+  );
 }
-export default App
+
+export default App;
