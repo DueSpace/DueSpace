@@ -26,11 +26,11 @@ export const NavBar = () => {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Why Us", path: "/#why-us" },
-    { name: "How We Work", path: "/#how-we-work" },
-    { name: "Projects", path: "/#projects" },
-    { name: "Who We Are", path: "/#who-we-are" },
+    { name: "Join Our Network", path: "/" },
+    { name: "Services", path: "/#services" },
+    { name: "Get in Touch", path: "/#get-in-touch" },
+    { name: "Community", path: "/#community" },
+    { name: "Our Story", path: "/our-story" },
   ];
 
   return (
