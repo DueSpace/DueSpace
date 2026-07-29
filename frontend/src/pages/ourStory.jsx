@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 const OurStory = () => {
   return (
     // Our story scection
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0, x: 30 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans">
+      className="mx-auto my-10 w-[90%] max-w-2xl font-sans"
+    >
       {/* Section Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -25,7 +26,7 @@ const OurStory = () => {
         grow with real teams, and do work that actually matters to them and to
         the startups they help bring to life.
       </p>
-      <hr className="w-90.25 mb-5" />
+      <hr className="w-90.25 mb-5 border-[#E5E5E5]" />
       {/* Our Origin section */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -69,7 +70,7 @@ const OurStory = () => {
         professionals grow through real work, and startups find the execution
         partner they actually need.
       </p>
-      <hr className="w-90.25 mb-5" />
+      <hr className="w-90.25 mb-5 border-[#E5E5E5]" />
       {/* our mission */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
