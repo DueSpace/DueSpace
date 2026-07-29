@@ -1,4 +1,5 @@
 import { RiArrowRightLongFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export const WhoWeAre = () => {
   return (
@@ -25,14 +26,14 @@ export const WhoWeAre = () => {
         </p>
 
         {/* Link to About/Story page */}
-        <a
-          href=""
+        <Link
+          to="/our-story"
           aria-label="Learn more about DueSpace"
           className="font-semibold text-[#7C3AED]"
         >
           Our Story
           <RiArrowRightLongFill className="mb-0.5 ml-1 inline-block size-4.5" />
-        </a>
+        </Link>
       </div>
 
       {/* Call-to-Action Card */}
