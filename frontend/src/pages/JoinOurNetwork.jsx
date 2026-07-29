@@ -23,7 +23,6 @@ export const JoinOurNetwork = () => {
       <FeatureProjects />
       <WhyHireInHouse />
       <WhoWeAre />
-      <Footer />
     </motion.div>
   );
 };

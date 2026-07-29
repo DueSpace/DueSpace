@@ -6,6 +6,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { MdSmartDisplay } from "react-icons/md";
 import { PiPenNibLight } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 /**
  * Service offerings dataset containing title, description, and corresponding icon component.
@@ -66,10 +67,12 @@ const ServiceCard = ({ service }) => {
       </div>
 
       {/* Learn More Button */}
-      <button className="mt-4 flex items-center gap-0.5 text-xs font-semibold text-[#7C3AED] transition-all hover:gap-2">
-        Learn more
-        <HiArrowLongRight className="mt-1 text-xl" />
-      </button>
+      <Link to="/services">
+        <button className="mt-4 flex items-center gap-0.5 text-xs font-semibold text-[#7C3AED] transition-all hover:gap-2">
+          Learn more
+          <HiArrowLongRight className="mt-1 text-xl" />
+        </button>
+      </Link>
     </article>
   );
 };
@@ -81,7 +84,6 @@ const ServiceCard = ({ service }) => {
 export const WhatWeBuild = () => {
   return (
     <section className="mx-auto my-16 w-[95%] max-w-2xl">
-
       {/* Category Badge */}
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
         WHAT WE BUILD
@@ -100,13 +102,9 @@ export const WhatWeBuild = () => {
       {/* Service Cards Grid (2 cards per row) */}
       <div className="mt-5 grid grid-cols-2 gap-4">
         {SERVICES_DATA.map((service) => (
-          <ServiceCard
-            key={service.id}
-            service={service}
-          />
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-
     </section>
   );
 };
