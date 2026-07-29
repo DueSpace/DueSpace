@@ -1,11 +1,17 @@
-import React from "react";
+import { motion } from "framer-motion";
 import { RiArrowRightLongFill } from "react-icons/ri";
 // assets imports
 import Mmachi from "../assets/MmachiBrand.png";
 
 const Services = () => {
   return (
-    <section className="mx-auto my-10 w-[90%] max-w-2xl">
+    <motion.section
+      initial={{ opacity: 0, x: 30 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -30 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="mx-auto my-10 w-[90%] max-w-2xl"
+    >
       {/* Section Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -24,10 +30,10 @@ const Services = () => {
 
       {/* duespace studios and duespace labs */}
       <div className="mb-10 flex gap-4">
-        <span className="w-47 badge badge-outline  border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
+        <span className="w-47 badge badge-outline  border border-[#7C3AED] p-5 font-space text-xs bg-linear-to-r from-[#7C3AED] to-[#F97316] bg-clip-text text-transparent">
           DUESPACE LABS
         </span>
-        <span className="w-47 badge badge-outline  border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
+        <span className="w-47 badge badge-outline  border border-[#7C3AED] p-5 font-space text-xs bg-linear-to-r from-[#7C3AED] to-[#67E8F9] bg-clip-text text-transparent">
           DUESPACE STUDIOS
         </span>
       </div>
@@ -62,7 +68,7 @@ const Services = () => {
         Start a Project
         <RiArrowRightLongFill className="inline-block size-6" />
       </button>
-    </section>
+    </motion.section>
   );
 };
 export default Services;

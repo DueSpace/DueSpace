@@ -93,7 +93,7 @@ const DetailRow = ({ icon: Icon, label, value }) => (
  * Reusable card wrapper for each project.
  */
 const ProjectCard = ({ project }) => (
-  <article className="mt-8 first:mt-0">
+  <article className="mt-8">
     {/* Project Image Header */}
     <div className="overflow-hidden rounded-t-2xl">
       <img

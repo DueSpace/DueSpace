@@ -6,6 +6,8 @@ import { JoinOurNetwork } from "./pages/JoinOurNetwork";
 import OurStory from "./pages/ourStory";
 import Services from "./pages/services";
 import { Footer } from "./components/Footer";
+
+
 function AnimatedRoutes() {
   const location = useLocation();
 
