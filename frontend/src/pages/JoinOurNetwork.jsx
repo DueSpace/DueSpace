@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { WhyFoundersChoose } from "../components/WhyFoundersChoose";
 import { HowWeWork } from "../components/HowWeWork";
 import { FeatureProjects } from "../components/FeatureProjects";
+import { WhatWeBuild } from "../components/WhatWeBuild";
+import { StructuredProductTeams } from "../components/StructuredProductTeams";
 import { WhyHireInHouse } from "../components/WhyHireInHouse";
 import { WhoWeAre } from "../components/WhoWeAre";
 import { Footer } from "../components/Footer";
@@ -16,6 +18,8 @@ export const JoinOurNetwork = () => {
       transition={{ duration: 0.35, ease: "easeOut" }}
       className="w-full"
     >
+      <StructuredProductTeams />
+      <WhatWeBuild />
       <WhyFoundersChoose />
       <HowWeWork />
       <FeatureProjects />
