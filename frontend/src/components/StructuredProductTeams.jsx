@@ -10,7 +10,6 @@ import { LuRocket } from "react-icons/lu";
 import { RiArrowRightLongFill } from "react-icons/ri";
 import { LuSparkles } from "react-icons/lu";
 
-
 const INDUSTRIES = [
   {
     id: 1,
@@ -49,7 +48,6 @@ const IndustryCard = ({ icon: Icon, title }) => (
 export const StructuredProductTeams = () => {
   return (
     <section className="mx-auto w-[95%] max-w-2xl">
-
       {/* Badge */}
 
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -58,12 +56,12 @@ export const StructuredProductTeams = () => {
 
       {/* Heading */}
 
-      <h1 className="mt-4 text-5xl font-bold leading-tight text-black">
+      <h1 className="mt-4 text-4xl font-bold leading-tight text-black">
         Your Product
         <br />
         Idea Is Ready.
         <br />
-        <span className="font-semibold text-4xl">
+        <span className="font-semibold text-3xl">
           Your Tech Team
           <br />
           Should Be Too.
@@ -73,26 +71,23 @@ export const StructuredProductTeams = () => {
       {/* Description */}
 
       <p className="mt-6 text-lg leading-7 text-gray-900">
-        DueSpace gives you a structured, vetted team of developers and
-        creatives ready to sprint from brief to shipped product.
-        No hiring cycles, no overhead. Just execution.
+        DueSpace gives you a structured, vetted team of developers and creatives
+        ready to sprint from brief to shipped product. No hiring cycles, no
+        overhead. Just execution.
       </p>
 
       {/* Buttons */}
 
-     <div className="my-5">
-
-        <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-3xl font-medium text-center text-white w-[70%]">  
+      <div className="my-5">
+        <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%]">
           Start a project
-          <RiArrowRightLongFill  className="mt-1.75 size-6"/>
+          <RiArrowRightLongFill className="mt-1.75 size-6" />
         </button>
 
-        <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-3xl font-semibold text-black ">
+        <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%]">
           See How We Work
         </button>
-
       </div>
-      
 
       {/* Hero Image */}
 
@@ -107,13 +102,11 @@ export const StructuredProductTeams = () => {
       {/* Trusted By */}
 
       <div className="mt-8 bg-white p-2 pb-6 shadow-sm">
-
         <h3 className="mb-6 text-center text-sm font-semibold uppercase text-gray-900">
           Trusted By Startups Building
         </h3>
 
         <div className="grid grid-cols-5 gap-4">
-
           {INDUSTRIES.map((industry) => (
             <IndustryCard
               key={industry.id}
@@ -121,11 +114,8 @@ export const StructuredProductTeams = () => {
               title={industry.title}
             />
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 };
