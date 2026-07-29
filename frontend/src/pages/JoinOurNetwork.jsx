@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { WhyFoundersChoose } from "../components/WhyFoundersChoose";
 import { HowWeWork } from "../components/HowWeWork";
@@ -7,7 +6,6 @@ import { WhatWeBuild } from "../components/WhatWeBuild";
 import { StructuredProductTeams } from "../components/StructuredProductTeams";
 import { WhyHireInHouse } from "../components/WhyHireInHouse";
 import { WhoWeAre } from "../components/WhoWeAre";
-import { Footer } from "../components/Footer";
 
 export const JoinOurNetwork = () => {
   return (
@@ -15,7 +13,7 @@ export const JoinOurNetwork = () => {
       initial={{ opacity: 0, x: 30 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.35, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className="w-full"
     >
       <StructuredProductTeams />

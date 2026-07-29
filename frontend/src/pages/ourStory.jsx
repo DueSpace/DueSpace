@@ -1,10 +1,15 @@
-import React from "react";
 import { RiArrowRightLongFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const OurStory = () => {
   return (
     // Our story scection
-    <section className="mx-auto my-10 w-[90%] max-w-2xl font-sans">
+    <motion.section 
+      initial={{ opacity: 0, x: 30 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -30 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="mx-auto my-10 w-[90%] max-w-2xl font-sans">
       {/* Section Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -150,7 +155,7 @@ const OurStory = () => {
         Apply to Join
         <RiArrowRightLongFill className="inline-block size-6" />
       </button>
-    </section>
+    </motion.section>
   );
 };
 

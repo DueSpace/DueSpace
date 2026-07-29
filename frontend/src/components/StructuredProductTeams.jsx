@@ -1,71 +1,69 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
-
 // Assets
 import Hero from "../assets/hero.png";
 
 // Icons
-import {
-  FaRocket,
-  FaCloud,
-  FaCog,
-  FaRobot,
-  FaTools,
-} from "react-icons/fa";
+import { LiaToolsSolid } from "react-icons/lia";
+import { FiCloud } from "react-icons/fi";
+import { GoGear } from "react-icons/go";
+import { LuRocket } from "react-icons/lu";
+import { RiArrowRightLongFill } from "react-icons/ri";
+import { LuSparkles } from "react-icons/lu";
+
 
 const INDUSTRIES = [
   {
     id: 1,
     title: "MVPs",
-    icon: FaRocket,
+    icon: LuRocket,
   },
   {
     id: 2,
     title: "SaaS",
-    icon: FaCloud,
+    icon: FiCloud,
   },
   {
     id: 3,
     title: "FinTech",
-    icon: FaCog,
+    icon: GoGear,
   },
   {
     id: 4,
-    title: "AI Products",
-    icon: FaRobot,
+    title: "AIProducts",
+    icon: LuSparkles,
   },
   {
     id: 5,
     title: "Tools",
-    icon: FaTools,
+    icon: LiaToolsSolid,
   },
 ];
 
 const IndustryCard = ({ icon: Icon, title }) => (
   <div className="flex flex-col items-center justify-center gap-3">
     <Icon className="text-3xl text-[#7C3AED]" />
-    <p className="text-sm text-gray-700">{title}</p>
+    <p className="text-sm text-gray-900">{title}</p>
   </div>
 );
 
 export const StructuredProductTeams = () => {
   return (
-    <section className="mx-auto w-[95%] max-w-2xl py-12">
+    <section className="mx-auto w-[95%] max-w-2xl">
 
       {/* Badge */}
 
-      <span className="rounded-full border border-[#7C3AED] px-6 py-3 text-xs tracking-[0.18em] text-[#7C3AED]">
+      <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
         STRUCTURED PRODUCT TEAMS
       </span>
 
       {/* Heading */}
 
-      <h1 className="mt-8 text-5xl font-bold leading-tight text-black">
+      <h1 className="mt-4 text-5xl font-bold leading-tight text-black">
         Your Product
         <br />
         Idea Is Ready.
         <br />
-        <span className="font-semibold">
+        <span className="font-semibold text-4xl">
           Your Tech Team
           <br />
           Should Be Too.
@@ -74,7 +72,7 @@ export const StructuredProductTeams = () => {
 
       {/* Description */}
 
-      <p className="mt-8 text-lg leading-9 text-gray-600">
+      <p className="mt-6 text-lg leading-7 text-gray-900">
         DueSpace gives you a structured, vetted team of developers and
         creatives ready to sprint from brief to shipped product.
         No hiring cycles, no overhead. Just execution.
@@ -82,18 +80,19 @@ export const StructuredProductTeams = () => {
 
       {/* Buttons */}
 
-      <div className="mt-8 flex flex-col gap-4">
+     <div className="my-5">
 
-        <button className="flex items-center justify-center gap-3 rounded-xl bg-[#7C3AED] py-4 text-lg font-medium text-white transition hover:bg-[#6931d8]">
+        <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-3xl font-medium text-center text-white w-[70%]">  
           Start a project
-          <FaArrowRight />
+          <RiArrowRightLongFill  className="mt-1.75 size-6"/>
         </button>
 
-        <button className="rounded-xl border border-[#7C3AED] py-4 text-lg font-medium text-black transition hover:bg-[#7C3AED] hover:text-white">
+        <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-3xl font-semibold text-black ">
           See How We Work
         </button>
 
       </div>
+      
 
       {/* Hero Image */}
 
@@ -101,15 +100,15 @@ export const StructuredProductTeams = () => {
         <img
           src={Hero}
           alt="Structured Product Teams"
-          className="w-full object-cover"
+          className="h-full w-[90%] mx-auto object-cover"
         />
       </div>
 
       {/* Trusted By */}
 
-      <div className="mt-8 rounded-2xl bg-white p-6 shadow-sm">
+      <div className="mt-8 bg-white p-2 pb-6 shadow-sm">
 
-        <h3 className="mb-6 text-center text-sm font-semibold uppercase text-gray-700">
+        <h3 className="mb-6 text-center text-sm font-semibold uppercase text-gray-900">
           Trusted By Startups Building
         </h3>
 

@@ -53,22 +53,22 @@ const ServiceCard = ({ service }) => {
     <article className="flex flex-col justify-between rounded-2xl bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div>
         {/* Service Icon */}
-        <Icon className="mb-1 text-2xl text-[#7C3AED]" />
+        <Icon className="mb-1 text-3xl text-[#7C3AED]" />
 
         {/* Service Title */}
-        <h3 className="pr-17 text-base font-semibold text-black">
+        <h3 className="pr-17 text-lg font-semibold text-black">
           {service.title}
         </h3>
 
         {/* Service Description */}
-        <p className="mt-2 text-xs leading-relaxed text-gray-600">
+        <p className="mt-2 text-sm leading-relaxed text-gray-600">
           {service.description}
         </p>
       </div>
 
       {/* Learn More Button */}
       <Link to="/services">
-        <button className="mt-4 flex items-center gap-0.5 text-xs font-semibold text-[#7C3AED] transition-all hover:gap-2">
+        <button className="mt-4 flex items-center gap-0.5 text-sm font-semibold text-[#7C3AED] transition-all hover:gap-2">
           Learn more
           <HiArrowLongRight className="mt-1 text-xl" />
         </button>
@@ -95,7 +95,7 @@ export const WhatWeBuild = () => {
       </h2>
 
       {/* Section Subtitle */}
-      <p className="mt-2 text-xs text-gray-900">
+      <p className="mt-2 text-sm text-gray-900">
         Everything you need to launch and scale your digital product.
       </p>
 
