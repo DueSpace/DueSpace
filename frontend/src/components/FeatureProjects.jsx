@@ -80,17 +80,12 @@ const DetailRow = ({ icon: Icon, label, value }) => (
   <div className="flex items-start">
     {/* Left Column: Icon + Label */}
     <div className="flex w-36 shrink-0 items-center gap-1.5 text-[0.9rem] text-black/60">
-      <Icon
-        aria-hidden="true"
-        className="h-7 w-7 opacity-70"
-      />
+      <Icon aria-hidden="true" className="h-7 w-7 opacity-70" />
       <span>{label}</span>
     </div>
 
     {/* Right Column: Value Description */}
-    <div className="ml-6 mt-1 leading-snug text-black/60">
-      {value}
-    </div>
+    <div className="ml-6 mt-1 leading-snug text-black/60">{value}</div>
   </div>
 );
 
@@ -112,9 +107,7 @@ const ProjectCard = ({ project }) => (
     <div className="rounded-b-2xl bg-white p-4 shadow-sm">
       {/* Title & Badge Row */}
       <div className="mb-6 flex items-center justify-between gap-4">
-        <h3 className="text-sm font-semibold text-black">
-          {project.title}
-        </h3>
+        <h3 className="text-sm font-semibold text-black">{project.title}</h3>
 
         <span className="badge badge-outline shrink-0 rounded-full border border-[#FFC100] px-3 py-3 text-sm text-[#FFC100]">
           {project.badgeText}

@@ -7,7 +7,7 @@ import { WhyHireInHouse } from "../components/WhyHireInHouse";
 import { WhoWeAre } from "../components/WhoWeAre";
 import { Footer } from "../components/Footer";
 
-export const HomeClient = () => {
+export const JoinOurNetwork = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 30 }}
@@ -26,4 +26,4 @@ export const HomeClient = () => {
   );
 };
 
-export default HomeClient;
+export default JoinOurNetwork;
