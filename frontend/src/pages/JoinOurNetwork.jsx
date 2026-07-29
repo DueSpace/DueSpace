@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { WhatWeBuild } from "../components/WhatWeBuild";
 import { WhyFoundersChoose } from "../components/WhyFoundersChoose";
 import { HowWeWork } from "../components/HowWeWork";
 import { FeatureProjects } from "../components/FeatureProjects";
@@ -16,6 +17,7 @@ export const JoinOurNetwork = () => {
       transition={{ duration: 0.35, ease: "easeOut" }}
       className="w-full"
     >
+      <WhatWeBuild />
       <WhyFoundersChoose />
       <HowWeWork />
       <FeatureProjects />
