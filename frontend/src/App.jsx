@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { NavBar } from "./components/NavBar";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { JoinOurNetwork } from "./pages/JoinOurNetwork";
 import OurStory from "./pages/ourStory";
 import Services from "./pages/services";
@@ -25,6 +26,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <AnimatedRoutes />
       <Footer />
