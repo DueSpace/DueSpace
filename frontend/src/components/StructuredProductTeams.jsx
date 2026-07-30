@@ -47,7 +47,7 @@ const IndustryCard = ({ icon: Icon, title }) => (
 
 export const StructuredProductTeams = () => {
   return (
-    <section className="mx-auto w-[95%] max-w-2xl">
+    <section className="mx-auto w-[95%] max-w-2xl md:max-w-full md:mx-0">
       {/* Badge */}
 
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -55,50 +55,51 @@ export const StructuredProductTeams = () => {
       </span>
 
       {/* Heading */}
+      <div className="md:flex md:w-full">
+        <div>
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-black">
+            Your Product
+            <br className="sm:hidden" />
+            Idea Is Ready.
+            <br />
+            <span className="font-semibold text-3xl">
+              Your Tech Team
+              <br className="sm:hidden" />
+              Should Be Too.
+            </span>
+          </h1>
 
-      <h1 className="mt-4 text-4xl font-bold leading-tight text-black">
-        Your Product
-        <br />
-        Idea Is Ready.
-        <br />
-        <span className="font-semibold text-3xl">
-          Your Tech Team
-          <br />
-          Should Be Too.
-        </span>
-      </h1>
+          {/* Description */}
 
-      {/* Description */}
+          <p className="mt-6 text-lg leading-7 text-gray-900 lg:w-87.5">
+            DueSpace gives you a structured, vetted team of developers and
+            creatives ready to sprint from brief to shipped product. No hiring
+            cycles, no overhead. Just execution.
+          </p>
 
-      <p className="mt-6 text-lg leading-7 text-gray-900">
-        DueSpace gives you a structured, vetted team of developers and creatives
-        ready to sprint from brief to shipped product. No hiring cycles, no
-        overhead. Just execution.
-      </p>
+          {/* Buttons */}
 
-      {/* Buttons */}
+          <div className="my-5">
+            <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-87.5">
+              Start a project
+              <RiArrowRightLongFill className="mt-1.75 size-6" />
+            </button>
 
-      <div className="my-5">
-        <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%]">
-          Start a project
-          <RiArrowRightLongFill className="mt-1.75 size-6" />
-        </button>
+            <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:w-87.5">
+              See How We Work
+            </button>
+          </div>
+        </div>
+        {/* Hero Image */}
 
-        <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%]">
-          See How We Work
-        </button>
+        <div className="mt-10 overflow-hidden rounded-3xl md:w-136 md:flex">
+          <img
+            src={Hero}
+            alt="Structured Product Teams"
+            className="h-full w-[90%] mx-auto object-cover"
+          />
+        </div>
       </div>
-
-      {/* Hero Image */}
-
-      <div className="mt-10 overflow-hidden rounded-3xl">
-        <img
-          src={Hero}
-          alt="Structured Product Teams"
-          className="h-full w-[90%] mx-auto object-cover"
-        />
-      </div>
-
       {/* Trusted By */}
 
       <div className="mt-8 bg-white p-2 pb-6 shadow-sm">

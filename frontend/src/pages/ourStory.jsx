@@ -98,9 +98,8 @@ const OurStory = () => {
       <div className="w-74 h-27.5 border border-[#E5E5E5] mb-5 mt-4 p-1">
         <p className=" text-[13px] font-bold mb-1">FOR PROFESSIONALS</p>
         <p className=" text-[14px]">
-          Get the team your product deserves: Brief us, and we assemble
-          developers, designers, and creatives around your project, working in
-          structured sprints toward your deadline.
+          Build the career you came here for: Real sprint projects. A real team.
+          Products in your portfolio that prove what you can do.
         </p>
       </div>
       {/* The two teams */}
