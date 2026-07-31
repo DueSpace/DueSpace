@@ -5,6 +5,7 @@ import { NavBar } from "./components/NavBar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { JoinOurNetwork } from "./pages/JoinOurNetwork";
 import OurStory from "./pages/ourStory";
+import { GetInTouch } from "./pages/GetInTouch";
 import Services from "./pages/services";
 import { Footer } from "./components/Footer";
 
@@ -17,6 +18,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<JoinOurNetwork />} />
         <Route path="/our-story" element={<OurStory />} />
+        <Route path="/get-in-touch" element={<GetInTouch />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </AnimatePresence>
