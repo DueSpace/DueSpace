@@ -12,6 +12,7 @@ import Chigozie from "../assets/community/Chigozie.png";
 import Precious from "../assets/community/Precious.png";
 import Chizaram from "../assets/community/Chizaram.png";
 import Miriam from "../assets/community/Miriam.png";
+import Evans from "../assets/community/Evans.png";
 import { FaCode } from "react-icons/fa6";
 import { FaChevronRight, FaChevronLeft, FaSearch } from "react-icons/fa";
 import { LiaPenNibSolid } from "react-icons/lia";
@@ -125,17 +126,24 @@ const designers = [
   {
     img: Chigozie,
     name: "Chigozie Nze",
-    role: "Team lead for DueSpace Labs; Full Stack Developer",
-    bio: "Leading development teams while building scalable, high-performance web applications from concept to deployment.",
-    tags: [
-      "React",
-      "Django",
-      "PostgreSQL",
-      "TailwindCSS",
-      "Developer",
-      "Next.js",
+    role: <>Graphic/Brand Designer</>,
+    bio: "Crafting distinctive brand identities and visual experiences that help businesses stand out and connect with their audience.",
+    tags: ["Adobe Photoshop", "Canva", "Graphics"],
+    projects: [
+      { name: "DueSpace Platform", role: "Designer" },
+      { name: "Mmachi Financial", role: "Designer" },
     ],
-    projects: [{ name: "DueSpace Platform", role: "Developer" }],
+  },
+  {
+    img: Evans,
+    name: "Ofoha Evans",
+    role: <>Graphic/Brand Designer</>,
+    bio: "Help brands stand out through strong and visual identity and consistent design.",
+    tags: ["Adobe Photoshop", "Canva", "Corel Draw", "Graphics"],
+    projects: [
+      { name: "DueSpace Platform", role: "Designer" },
+      { name: "Mmachi Financial", role: "Designer" },
+    ],
   },
 ];
 
@@ -145,46 +153,40 @@ const product = [
     name: "David Uwazie",
     role: (
       <>
-        <span className="font-bold">Founder; </span>Software Engineer, Network
-        Engineer, IT Consultant
+        Team lead of DueSpace studio; Project Manager, Visual Designer, Video
+        Editor, Motion Designer
       </>
     ),
-    bio: "Founder dedicated to helping startups and emerging professionals build impactful products through collaboration and innovation.",
-    tags: ["PHP", "Developer", "MERN Stack"],
+    bio: "Leading DueSpace Studio by managing creative projects and delivering impactful visual, motion, and video experiences.",
+    tags: [
+      "Figma",
+      "Adobe Illustrator",
+      "Capcut",
+      "Adobe Photoshop",
+      "Canva",
+      "Motion Graphics",
+    ],
     projects: [
-      { name: "DueSpace Platform", role: "Founder/Developer" },
-      { name: "Beacon Academy", role: "Developer" },
+      { name: "DueSpace Platform", role: "Designer" },
+      { name: "Beacon Academy", role: "Designer" },
+      { name: "Mmachi Financial", role: "Designer" },
     ],
   },
   {
     img: Grace,
     name: "Grace Chijioke",
-    role: "Team lead for DueSpace Labs; Full Stack Developer",
-    bio: "Leading development teams while building scalable, high-performance web applications from concept to deployment.",
-    tags: [
-      "React",
-      "Django",
-      "PostgreSQL",
-      "TailwindCSS",
-      "Developer",
-      "Next.js",
-    ],
-    projects: [{ name: "DueSpace Platform", role: "Developer" }],
+    role: "Product Design Manager; UI/UX Designer, Product Design, Product Manager",
+    bio: "Passionate about Leading product teams to design  and craft intuitive digital experiences that are user centered with a focus on accessibility and modern product design.",
+    tags: ["Figma", "Canva", "UI Design", "Notion"],
+    projects: [{ name: "DueSpace Platform", role: "Designer" }],
   },
   {
     img: Precious,
     name: "Precious Ononuju",
-    role: "Team lead for DueSpace Labs; Full Stack Developer",
-    bio: "Leading development teams while building scalable, high-performance web applications from concept to deployment.",
-    tags: [
-      "React",
-      "Django",
-      "PostgreSQL",
-      "TailwindCSS",
-      "Developer",
-      "Next.js",
-    ],
-    projects: [{ name: "DueSpace Platform", role: "Developer" }],
+    role: "UI/UX Designer, Product Design",
+    bio: "Crafts intuitive digital experiences that are user centered and visually engaging.",
+    tags: ["Figma", "Canva", "UI Design", "Corel Draw"],
+    projects: [{ name: "DueSpace Platform", role: "Designer" }],
   },
 ];
 
@@ -192,33 +194,18 @@ const marketing = [
   {
     img: Chizaram,
     name: "Chizaram",
-    role: (
-      <>
-        <span className="font-bold">Founder; </span>Software Engineer, Network
-        Engineer, IT Consultant
-      </>
-    ),
-    bio: "Founder dedicated to helping startups and emerging professionals build impactful products through collaboration and innovation.",
-    tags: ["PHP", "Developer", "MERN Stack"],
-    projects: [
-      { name: "DueSpace Platform", role: "Founder/Developer" },
-      { name: "Beacon Academy", role: "Developer" },
-    ],
+    role: "Business and Growth Analyst for DueSpace",
+    bio: "Driving business  (DueSpace) growth through market research, strategic planning, and data-driven decision making.",
+    tags: ["Notion", "Business Developer", "Analyst", "Marketing", "Growth"],
+    projects: [{ name: "DueSpace Platform", role: "Growth Analyst" }],
   },
   {
     img: Miriam,
     name: "Miriam",
-    role: "Team lead for DueSpace Labs; Full Stack Developer",
-    bio: "Leading development teams while building scalable, high-performance web applications from concept to deployment.",
-    tags: [
-      "React",
-      "Django",
-      "PostgreSQL",
-      "TailwindCSS",
-      "Developer",
-      "Next.js",
-    ],
-    projects: [{ name: "DueSpace Platform", role: "Developer" }],
+    role: "Social Media Manager",
+    bio: "Building a thriving community by connecting people, managing talent, and creating engaging digital content.",
+    tags: ["Notion", "Linkedin", "Social Media Marketing"],
+    projects: [{ name: "DueSpace Platform", role: "Social Media Manager" }],
   },
 ];
 
