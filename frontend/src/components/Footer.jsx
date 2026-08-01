@@ -43,7 +43,7 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]">
+    <footer className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-295">
       {/* Top divider */}
       <hr className="border" />
 
