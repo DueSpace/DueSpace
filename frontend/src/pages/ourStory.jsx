@@ -18,6 +18,9 @@ const OurStory = () => {
         </span>
       </div>
       {/* Section Heading */}
+      <h1 className="text-[32px] font-bold md:text-4xl mb-5">
+        We built the space we always needed.
+      </h1>
 
       <p className="text-4 w-84.25 mb-5 md:w-[70%] md:text-xl md:leading-8">
         DueSpace is where African tech professionals come to build real things,
