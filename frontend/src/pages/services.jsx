@@ -10,7 +10,7 @@ const Services = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl md:max-w-[1180px] md:my-16"
+      className="mx-auto my-10 w-[90%] max-w-2xl md:max-w-295 md:my-16"
     >
       {/* Section Badge */}
       <div className="mb-4">
@@ -37,7 +37,11 @@ const Services = () => {
           DUESPACE STUDIOS
         </span>
       </div>
-      <img src={Mmachi} alt="Mmachi Brand" className="mb-10 w-full max-h-[460px] object-cover object-top" />
+      <img
+        src={Mmachi}
+        alt="Mmachi Brand"
+        className="mb-10 w-full max-h-115 object-cover object-top"
+      />
 
       {/* How we measure Quality */}
       <p className="font-bold text-[20px]">How we measure Quality</p>

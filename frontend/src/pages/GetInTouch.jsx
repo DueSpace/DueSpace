@@ -13,7 +13,7 @@ export const GetInTouch = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-[1180px] md:my-16"
+      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
     >
       {/* Header / System Gateway Badge */}
       <div className="mb-4">
@@ -43,7 +43,8 @@ export const GetInTouch = () => {
                 Start a new project brief
               </h3>
               <p className="ml-3 my-1 text-[#525252]">
-                Deploy a technical execution engine or launch a premium creative design.
+                Deploy a technical execution engine or launch a premium creative
+                design.
               </p>
             </div>
             <a href="https://tally.so/r/ODg90k" className="ml-3 md:ml-0">
@@ -62,7 +63,10 @@ export const GetInTouch = () => {
             </span>
           </div>
           <div className="w-90.5 pt-3 pb-7 text-[#7C3AED] border border-[#111111] bg-[#FFFFFF] uppercase font-manrope font-bold px-2 space-y-8 md:flex md:min-h-64 md:w-full md:flex-col md:justify-around md:space-y-0 md:p-8">
-            <a href="https://tally.so/r/NpgNDQ" className="border-b border-[#7C3AED33] pb-6 md:pb-5">
+            <a
+              href="https://tally.so/r/NpgNDQ"
+              className="border-b border-[#7C3AED33] pb-6 md:pb-5"
+            >
               <p>
                 [I am a creative / developer]
                 <GoArrowRight className="ml-1 mb-0.5 inline-block size-7 text-[#7C3AED]" />
