@@ -348,7 +348,7 @@ export const Community = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-manrope md:max-w-[1180px] md:my-16"
+      className="mx-auto my-10 w-[90%] max-w-2xl font-manrope md:max-w-295 md:my-16"
     >
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">

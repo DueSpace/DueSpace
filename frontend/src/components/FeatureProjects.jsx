@@ -4,7 +4,7 @@ import { AiOutlineTeam } from "react-icons/ai";
 
 // Asset Imports
 import Mmachi from "../assets/MmachiBrand.png";
-import Beacon from "../assets/BeaconAcademy.png";
+import Beacon from "../assets/BeaconAcademy1.png";
 
 /**
  * Single source of truth for project metadata and content.

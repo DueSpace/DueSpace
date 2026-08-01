@@ -9,7 +9,7 @@ const OurStory = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-[1180px] md:my-16"
+      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
     >
       {/* Section Badge */}
       <div className="mb-4">
