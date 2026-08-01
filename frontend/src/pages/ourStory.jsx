@@ -18,9 +18,7 @@ const OurStory = () => {
         </span>
       </div>
       {/* Section Heading */}
-      <h2 className="mb-6 text-[32px] w-74 font-bold text-gray-900">
-        We Built the space we always needed.
-      </h2>
+                        
       <p className="text-4 w-84.25 mb-5">
         DueSpace is where African tech professionals come to build real things,
         grow with real teams, and do work that actually matters to them and to

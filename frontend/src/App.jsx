@@ -7,6 +7,7 @@ import { JoinOurNetwork } from "./pages/JoinOurNetwork";
 import OurStory from "./pages/ourStory";
 import { GetInTouch } from "./pages/GetInTouch";
 import Services from "./pages/services";
+import { Community } from "./pages/Community";
 import { Footer } from "./components/Footer";
 
 
@@ -19,6 +20,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<JoinOurNetwork />} />
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/get-in-touch" element={<GetInTouch />} />
+        <Route path="/community" element={<Community />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </AnimatePresence>

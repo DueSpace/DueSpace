@@ -75,7 +75,7 @@ export const Footer = () => {
               required
               aria-label="Email Address"
               placeholder="Enter your Email address"
-              className="w-full border border-[#BA68C8] py-2.5 pr-12 text-sm placeholder:text-[#000000B2]"
+              className="w-full border border-[#BA68C8] py-2.5 pr-12 text-sm focus:outline-none focus:border-[#7C3AED] placeholder:text-[#000000B2]"
             />
 
             {/* Submit button */}
