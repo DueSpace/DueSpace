@@ -221,21 +221,21 @@ const WorkStep = ({ step, isLast }) => {
   const IconComponent = step.IconComponent;
 
   return (
-    <div className="relative mb-6">
-      <div className="flex items-stretch gap-4">
+    <div className="relative mb-6 md:mb-0">
+      <div className="flex items-stretch gap-4 md:block">
         {/* numbered circle + connecting line */}
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col items-center md:mb-3 md:flex-row md:justify-center">
           <div className="z-10 flex h-7.5 w-7.5 shrink-0 items-center justify-center rounded-full bg-[#7C3AED] text-sm font-bold text-white">
             {step.number}
           </div>
 
           {!isLast && (
-            <div className="absolute top-7.5 h-[calc(100%+1.5rem)] border-l-2 border-dashed border-[#7C3AED]/20" />
+            <div className="absolute top-7.5 h-[calc(100%+1.5rem)] border-l-2 border-dashed border-[#7C3AED]/20 md:left-[50%] md:top-[50%] md:h-0 md:w-[calc(100%+2rem)] md:border-l-0 md:border-t-2" />
           )}
         </div>
 
         {/* white background card with content and icon */}
-        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-2.5 shadow-sm backdrop-blur-sm w-79.5 h-21">
+        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-2.5 shadow-sm backdrop-blur-sm w-79.5 h-21 md:h-[11rem] md:w-auto md:flex-col md:gap-2">
           <div className="flex-1">
             <h3 className="mb-2 text-[15px] font-bold leading-tight text-black">
               {step.title}
@@ -247,7 +247,7 @@ const WorkStep = ({ step, isLast }) => {
 
           {/* icon box */}
           <div
-            className="flex h-7.5 w-7.5 shrink-0 items-center justify-center rounded-2xl m-auto"
+            className="flex h-7.5 w-7.5 shrink-0 items-center justify-center rounded-2xl m-auto md:order-first md:mx-auto md:my-0"
             style={{ backgroundColor: step.iconBg }}
           >
             <IconComponent />
@@ -261,7 +261,7 @@ const WorkStep = ({ step, isLast }) => {
 export const HowWeWork = () => {
   return (
     <section
-      className="mx-auto my-10 w-[95%] max-w-2xl font-sans "
+      className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]"
       id="how-we-work"
     >
       {/* header badge */}
@@ -280,7 +280,7 @@ export const HowWeWork = () => {
       </p>
 
       {/* steps list */}
-      <div className="space-y-0">
+      <div className="space-y-0 md:grid md:grid-cols-5 md:gap-4">
         {WORK_STEPS_DATA.map((step, index) => (
           <WorkStep
             key={step.id}

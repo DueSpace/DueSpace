@@ -29,9 +29,9 @@ const ADVANTAGES_DATA = [
 ];
 
 const AdvantageItem = ({ advantage, isLast }) => (
-  <div className="relative flex gap-4">
+  <div className="relative flex gap-4 md:block">
     {/* bullet point + line */}
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center md:hidden">
       <div className="z-10 h-2.5 w-2.5 shrink-0 rounded-full bg-[#7C3AED] mt-1.75" />
 
       {!isLast && (
@@ -39,7 +39,7 @@ const AdvantageItem = ({ advantage, isLast }) => (
       )}
     </div>
 
-    <div className="pb-8">
+    <div className="pb-8 md:border-l-2 md:border-[#7C3AED]/20 md:pl-5 md:pb-0">
       <h3 className="mb-2 text-lg font-bold text-black">{advantage.title}</h3>
       <p className="text-sm leading-relaxed text-black/60">
         {advantage.description}
@@ -50,7 +50,7 @@ const AdvantageItem = ({ advantage, isLast }) => (
 
 export const WhyFoundersChoose = () => {
   return (
-    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans">
+    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]">
       {/* header badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -63,7 +63,7 @@ export const WhyFoundersChoose = () => {
       </h2>
 
       {/* list of advantages */}
-      <div className="space-y-0">
+      <div className="space-y-0 md:grid md:grid-cols-4 md:gap-6">
         {ADVANTAGES_DATA.map((advantage, index) => (
           <AdvantageItem
             key={advantage.id}

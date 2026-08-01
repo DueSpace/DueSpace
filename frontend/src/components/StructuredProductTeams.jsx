@@ -40,14 +40,14 @@ const INDUSTRIES = [
 
 const IndustryCard = ({ icon: Icon, title }) => (
   <div className="flex flex-col items-center justify-center gap-3">
-    <Icon className="text-3xl text-[#7C3AED]" />
+    <Icon className="text-3xl text-[#7C3AED] md:text-4xl" />
     <p className="text-sm text-gray-900">{title}</p>
   </div>
 );
 
 export const StructuredProductTeams = () => {
   return (
-    <section className="mx-auto w-[95%] max-w-2xl md:max-w-full md:mx-0">
+    <section className="mx-auto w-[95%] max-w-2xl md:max-w-[1180px]">
       {/* Badge */}
 
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -55,13 +55,13 @@ export const StructuredProductTeams = () => {
       </span>
 
       {/* Heading */}
-      <div className="md:flex md:w-full">
+      <div className="md:grid md:grid-cols-[.92fr_1.08fr] md:items-center md:gap-12">
         <div>
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-black">
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-black md:text-5xl">
             Your Product Idea Is Ready.{"  "}
             {/* <br className="sm:hidden" /> */}
             {/* <br /> */}
-            <span className="font-semibold text-3xl">
+            <span className="font-semibold text-3xl md:text-4xl">
               Your Tech Team Should Be Too.
               {/* <br className="sm:hidden" /> */}
             </span>
@@ -69,7 +69,7 @@ export const StructuredProductTeams = () => {
 
           {/* Description */}
 
-          <p className="mt-6 text-lg leading-7 text-gray-900 lg:w-87.5">
+          <p className="mt-6 text-lg leading-7 text-gray-900 lg:w-[31rem]">
             DueSpace gives you a structured, vetted team of developers and
             creatives ready to sprint from brief to shipped product. No hiring
             cycles, no overhead. Just execution.
@@ -77,16 +77,16 @@ export const StructuredProductTeams = () => {
 
           {/* Buttons */}
 
-          <div className="my-5">
+          <div className="my-5 md:flex md:gap-3">
             <a href="https://tally.so/r/ODg90k">
-              <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-87.5">
+              <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-auto md:text-lg">
                 Start a project
                 <RiArrowRightLongFill className="mt-1.75 size-6" />
               </button>
             </a>
 
             <a href="#how-we-work">
-              <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:w-87.5">
+              <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:mt-0 md:w-auto md:text-lg">
                 See How We Work
               </button>
             </a>
@@ -94,17 +94,17 @@ export const StructuredProductTeams = () => {
         </div>
         {/* Hero Image */}
 
-        <div className="mt-10 overflow-hidden rounded-3xl md:w-136 md:flex">
+        <div className="mt-10 overflow-hidden rounded-3xl md:mt-0 md:flex">
           <img
             src={Hero}
             alt="Structured Product Teams"
-            className="h-full w-[90%] mx-auto object-cover"
+            className="h-full w-[90%] mx-auto object-cover md:w-full"
           />
         </div>
       </div>
       {/* Trusted By */}
 
-      <div className="mt-8 bg-white p-2 pb-6 shadow-sm">
+      <div className="mt-8 bg-white p-2 pb-6 shadow-sm md:mt-14 md:px-8 md:py-6">
         <h3 className="mb-6 text-center text-sm font-semibold uppercase text-gray-900">
           Trusted By Startups Building
         </h3>

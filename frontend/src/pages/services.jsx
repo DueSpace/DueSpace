@@ -10,7 +10,7 @@ const Services = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl"
+      className="mx-auto my-10 w-[90%] max-w-2xl md:max-w-[1180px] md:my-16"
     >
       {/* Section Badge */}
       <div className="mb-4">
@@ -20,7 +20,7 @@ const Services = () => {
       </div>
 
       {/* caption */}
-      <p className="font-bold text-[32px]">
+      <p className="font-bold text-[32px] md:text-5xl">
         Our Capabilities. Your Deliverables.
       </p>
       <p className="mb-4">
@@ -37,12 +37,12 @@ const Services = () => {
           DUESPACE STUDIOS
         </span>
       </div>
-      <img src={Mmachi} alt="Mmachi Brand" className="mb-10" />
+      <img src={Mmachi} alt="Mmachi Brand" className="mb-10 w-full max-h-[460px] object-cover object-top" />
 
       {/* How we measure Quality */}
       <p className="font-bold text-[20px]">How we measure Quality</p>
 
-      <ul className="list-disc p-5 mb-10">
+      <ul className="list-disc p-5 mb-10 md:grid md:grid-cols-3 md:gap-8 md:pl-5">
         <li className="mb-1 font-bold">
           Execution over everything{" "}
           <span className="font-normal">

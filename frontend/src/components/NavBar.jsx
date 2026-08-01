@@ -36,14 +36,14 @@ export const NavBar = () => {
   return (
     <>
       {/* Original Main Navigation Header */}
-      <header className="mx-auto mt-5 mb-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans relative z-40">
+      <header className="mx-auto mt-5 mb-10 flex w-[95%] max-w-2xl items-center justify-between bg-white py-3 pr-3 font-sans relative z-40 md:mb-6 md:h-auto md:max-w-[1180px] md:w-[95%] md:px-0 md:py-5">
         {/* Company logo */}
         <Link to="/">
           <img src={Due} alt="DueSpace Logo" className="w-25" />
         </Link>
 
         {/* Mobile navigation menu button */}
-        <nav>
+        <nav className="md:hidden">
           <button
             type="button"
             onClick={() => setIsOpen(true)}
@@ -52,6 +52,26 @@ export const NavBar = () => {
           >
             <FaBars className="text-xl" />
           </button>
+        </nav>
+
+        <nav className="hidden items-center gap-7 md:flex" aria-label="Main navigation">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className={`text-sm font-semibold transition-colors hover:text-[#7C3AED] ${
+                location.pathname === link.path ? "text-[#7C3AED]" : "text-slate-800"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <a
+            href="https://tally.so/r/ODg90k"
+            className="rounded-lg bg-[#7C3AED] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#6930d6]"
+          >
+            Start a Project
+          </a>
         </nav>
       </header>
 

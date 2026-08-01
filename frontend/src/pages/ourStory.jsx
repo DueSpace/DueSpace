@@ -9,7 +9,7 @@ const OurStory = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -30 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans"
+      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-[1180px] md:my-16"
     >
       {/* Section Badge */}
       <div className="mb-4">
@@ -19,12 +19,12 @@ const OurStory = () => {
       </div>
       {/* Section Heading */}
 
-      <p className="text-4 w-84.25 mb-5">
+      <p className="text-4 w-84.25 mb-5 md:w-[70%] md:text-xl md:leading-8">
         DueSpace is where African tech professionals come to build real things,
         grow with real teams, and do work that actually matters to them and to
         the startups they help bring to life.
       </p>
-      <hr className="w-90.25 mb-5 border-[#E5E5E5]" />
+      <hr className="w-90.25 mb-5 border-[#E5E5E5] md:w-full" />
       {/* Our Origin section */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -38,9 +38,9 @@ const OurStory = () => {
         portfolio or team experience. No proof.
       </p>
       {/* Two sided wall container */}
-      <div className="w-69.5 h-49.5 border border-[#E5E5E5] mb-5">
+      <div className="w-69.5 h-49.5 border border-[#E5E5E5] mb-5 md:h-auto md:w-full md:p-6">
         <p className=" text-[13px] font-bold mb-2">THE TWO-SIDED WALL</p>
-        <div className="w-63.75 h-38.75 pl-1">
+        <div className="w-63.75 h-38.75 pl-1 md:grid md:h-auto md:w-full md:grid-cols-2 md:gap-8">
           <p className="font-bold text-4">
             [X] THE TALENT PROFILE{"  "}
             <RiArrowRightLongFill className="inline-block size-6" />
@@ -68,7 +68,7 @@ const OurStory = () => {
         professionals grow through real work, and startups find the execution
         partner they actually need.
       </p>
-      <hr className="w-90.25 mb-5 border-[#E5E5E5]" />
+      <hr className="w-90.25 mb-5 border-[#E5E5E5] md:w-full" />
       {/* our mission */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -84,7 +84,7 @@ const OurStory = () => {
         </span>
       </span>
       {/* Founders and startups container*/}
-      <div className="w-74 h-27.5 border border-[#E5E5E5] mb-5 mt-4 p-1">
+      <div className="w-74 h-27.5 border border-[#E5E5E5] mb-5 mt-4 p-1 md:inline-block md:h-auto md:w-[calc(50%-0.75rem)] md:align-top md:p-5">
         <p className=" text-[13px] font-bold mb-1">FOR STARTUPS & FOUNDERS</p>
         <p className=" text-[14px]">
           Get the team your product deserves: Brief us, and we assemble
@@ -93,7 +93,7 @@ const OurStory = () => {
         </p>
       </div>
       {/* talent container */}
-      <div className="w-74 h-27.5 border border-[#E5E5E5] mb-5 mt-4 p-1">
+      <div className="w-74 h-27.5 border border-[#E5E5E5] mb-5 mt-4 p-1 md:ml-5 md:inline-block md:h-auto md:w-[calc(50%-0.75rem)] md:align-top md:p-5">
         <p className=" text-[13px] font-bold mb-1">FOR PROFESSIONALS</p>
         <p className=" text-[14px]">
           Build the career you came here for: Real sprint projects. A real team.
@@ -108,7 +108,7 @@ const OurStory = () => {
       </div>
       <h3 className="font-bold">Two teams, one ecosystem</h3>
       {/* DUESPACE LABS*/}
-      <div className="w-79.75 h-45.75 border border-[#E5E5E5] mb-5 mt-4 p-1">
+      <div className="w-79.75 h-45.75 border border-[#E5E5E5] mb-5 mt-4 p-1 md:inline-block md:h-auto md:w-[calc(50%-0.75rem)] md:align-top md:p-6">
         <p className=" text-[13px] font-bold mb-1">
           DUESPACE LABS: your product engine
         </p>
@@ -119,7 +119,7 @@ const OurStory = () => {
         </p>
       </div>
       {/* DUESPACE STUDIOS */}
-      <div className="w-79.75 h-45.75 border border-[#E5E5E5] mb-5 mt-4 p-1">
+      <div className="w-79.75 h-45.75 border border-[#E5E5E5] mb-5 mt-4 p-1 md:ml-5 md:inline-block md:h-auto md:w-[calc(50%-0.75rem)] md:align-top md:p-6">
         <p className=" text-[13px] font-bold mb-4">
           DUESPACE STUDIOS: your visual engine
         </p>

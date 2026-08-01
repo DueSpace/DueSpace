@@ -93,18 +93,18 @@ const DetailRow = ({ icon: Icon, label, value }) => (
  * Reusable card wrapper for each project.
  */
 const ProjectCard = ({ project }) => (
-  <article className="mt-8">
+  <article className="mt-8 md:grid md:grid-cols-[.96fr_1.04fr] md:items-stretch">
     {/* Project Image Header */}
-    <div className="overflow-hidden rounded-t-2xl">
+    <div className="overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
       <img
         src={project.imageSrc}
         alt={project.imageAlt}
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover md:min-h-full"
       />
     </div>
 
     {/* Project Card Body */}
-    <div className="rounded-b-2xl bg-white p-4 shadow-sm">
+    <div className="rounded-b-2xl bg-white p-4 shadow-sm md:rounded-r-2xl md:rounded-bl-none md:p-7">
       {/* Title & Badge Row */}
       <div className="mb-6 flex items-center justify-between gap-4">
         <h3 className="text-sm font-semibold text-black">{project.title}</h3>
@@ -134,7 +134,7 @@ const ProjectCard = ({ project }) => (
  */
 export const FeatureProjects = () => {
   return (
-    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans">
+    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]">
       {/* Section Header */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">

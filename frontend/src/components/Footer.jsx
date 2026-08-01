@@ -43,14 +43,14 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="mx-auto my-10 w-[95%] max-w-2xl font-sans">
+    <footer className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]">
       {/* Top divider */}
       <hr className="border" />
 
       {/* Newsletter section */}
-      <div className="mx-2 my-4">
+      <div className="mx-2 my-4 md:grid md:grid-cols-[1fr_1.7fr] md:items-center md:gap-12">
         {/* Company logo */}
-        <img src={Due} alt="DueSpace" className="ml-1 w-25" />
+        <img src={Due} alt="DueSpace" className="ml-1 w-25 md:row-span-3" />
 
         {/* Newsletter heading */}
         <p className="font-space mt-3 ml-0">[GLOBAL DISPATCH]</p>
@@ -61,8 +61,8 @@ export const Footer = () => {
         </p>
 
         {/* Email subscription form */}
-        <form className="my-3 ml-1">
-          <div className="relative w-[90%]">
+        <form className="my-3 ml-1 md:col-start-2">
+          <div className="relative w-[90%] md:w-full">
             <input
               type="email"
               name="email"

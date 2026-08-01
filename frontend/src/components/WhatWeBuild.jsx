@@ -83,7 +83,7 @@ const ServiceCard = ({ service }) => {
  */
 export const WhatWeBuild = () => {
   return (
-    <section className="mx-auto my-16 w-[95%] max-w-2xl">
+    <section className="mx-auto my-16 w-[95%] max-w-2xl md:max-w-[1180px]">
       {/* Category Badge */}
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
         WHAT WE BUILD
@@ -100,7 +100,7 @@ export const WhatWeBuild = () => {
       </p>
 
       {/* Service Cards Grid (2 cards per row) */}
-      <div className="mt-5 grid grid-cols-2 gap-4">
+      <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
         {SERVICES_DATA.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
