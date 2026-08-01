@@ -47,7 +47,7 @@ const IndustryCard = ({ icon: Icon, title }) => (
 
 export const StructuredProductTeams = () => {
   return (
-    <section className="mx-auto w-[95%] max-w-2xl md:max-w-[1180px]">
+    <section className="mx-auto w-[95%] max-w-2xl md:max-w-295">
       {/* Badge */}
 
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -69,7 +69,7 @@ export const StructuredProductTeams = () => {
 
           {/* Description */}
 
-          <p className="mt-6 text-lg leading-7 text-gray-900 lg:w-[31rem]">
+          <p className="mt-6 text-lg leading-7 text-gray-900 lg:w-124">
             DueSpace gives you a structured, vetted team of developers and
             creatives ready to sprint from brief to shipped product. No hiring
             cycles, no overhead. Just execution.

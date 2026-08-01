@@ -83,7 +83,7 @@ const ServiceCard = ({ service }) => {
  */
 export const WhatWeBuild = () => {
   return (
-    <section className="mx-auto my-16 w-[95%] max-w-2xl md:max-w-[1180px]">
+    <section className="mx-auto my-16 w-[95%] max-w-2xl md:max-w-295">
       {/* Category Badge */}
       <span className="badge badge-outline mb-4 rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
         WHAT WE BUILD

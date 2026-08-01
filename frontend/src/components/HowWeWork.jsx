@@ -235,7 +235,7 @@ const WorkStep = ({ step, isLast }) => {
         </div>
 
         {/* white background card with content and icon */}
-        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-2.5 shadow-sm backdrop-blur-sm w-79.5 h-21 md:h-[11rem] md:w-auto md:flex-col md:gap-2">
+        <div className="flex flex-1 items-start gap-3 rounded-2xl bg-white/60 p-2.5 shadow-sm backdrop-blur-sm w-79.5 h-21 md:h-44 md:w-auto md:flex-col md:gap-2">
           <div className="flex-1">
             <h3 className="mb-2 text-[15px] font-bold leading-tight text-black">
               {step.title}
@@ -261,7 +261,7 @@ const WorkStep = ({ step, isLast }) => {
 export const HowWeWork = () => {
   return (
     <section
-      className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]"
+      className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-295"
       id="how-we-work"
     >
       {/* header badge */}

@@ -134,7 +134,7 @@ const ProjectCard = ({ project }) => (
  */
 export const FeatureProjects = () => {
   return (
-    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-[1180px]">
+    <section className="mx-auto my-10 w-[95%] max-w-2xl font-sans md:max-w-295">
       {/* Section Header */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
