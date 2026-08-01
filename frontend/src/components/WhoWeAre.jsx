@@ -50,13 +50,15 @@ export const WhoWeAre = () => {
           </p>
 
           {/* CTA Button */}
-          <button
-            type="button"
-            className="btn mt-4 w-[90%] rounded-xl border-none bg-white text-[16px] text-black"
-          >
-            Start a Project
-            <RiArrowRightLongFill className="inline-block size-6" />
-          </button>
+          <a href="https://tally.so/r/ODg90k">
+            <button
+              type="button"
+              className="btn mt-4 w-[90%] rounded-xl border-none bg-white text-[16px] text-black"
+            >
+              Start a Project
+              <RiArrowRightLongFill className="inline-block size-6" />
+            </button>
+          </a>
         </div>
       </div>
     </section>

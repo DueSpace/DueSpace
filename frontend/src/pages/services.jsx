@@ -64,10 +64,12 @@ const Services = () => {
         </li>
       </ul>
       {/* start a project */}
-      <button className="btn mt-4 w-63.75 h-8.25 border-none bg-[#7C3AED] text-[16px] text-white">
-        Start a Project
-        <RiArrowRightLongFill className="inline-block size-6" />
-      </button>
+      <a href="https://tally.so/r/ODg90k">
+        <button className="btn mt-4 w-63.75 h-8.25 border-none bg-[#7C3AED] text-[16px] text-white">
+          Start a Project
+          <RiArrowRightLongFill className="inline-block size-6" />
+        </button>
+      </a>
     </motion.section>
   );
 };

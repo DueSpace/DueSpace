@@ -58,14 +58,12 @@ export const StructuredProductTeams = () => {
       <div className="md:flex md:w-full">
         <div>
           <h1 className="mt-4 text-4xl font-bold leading-tight text-black">
-            Your Product
-            <br className="sm:hidden" />
-            Idea Is Ready.
-            <br />
+            Your Product Idea Is Ready.{"  "}
+            {/* <br className="sm:hidden" /> */}
+            {/* <br /> */}
             <span className="font-semibold text-3xl">
-              Your Tech Team
-              <br className="sm:hidden" />
-              Should Be Too.
+              Your Tech Team Should Be Too.
+              {/* <br className="sm:hidden" /> */}
             </span>
           </h1>
 
@@ -80,14 +78,18 @@ export const StructuredProductTeams = () => {
           {/* Buttons */}
 
           <div className="my-5">
-            <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-87.5">
-              Start a project
-              <RiArrowRightLongFill className="mt-1.75 size-6" />
-            </button>
+            <a href="https://tally.so/r/ODg90k">
+              <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-87.5">
+                Start a project
+                <RiArrowRightLongFill className="mt-1.75 size-6" />
+              </button>
+            </a>
 
-            <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:w-87.5">
-              See How We Work
-            </button>
+            <a href="#how-we-work">
+              <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:w-87.5">
+                See How We Work
+              </button>
+            </a>
           </div>
         </div>
         {/* Hero Image */}

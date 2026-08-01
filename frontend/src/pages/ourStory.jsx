@@ -18,7 +18,7 @@ const OurStory = () => {
         </span>
       </div>
       {/* Section Heading */}
-                        
+
       <p className="text-4 w-84.25 mb-5">
         DueSpace is where African tech professionals come to build real things,
         grow with real teams, and do work that actually matters to them and to
@@ -149,10 +149,12 @@ const OurStory = () => {
         Ready to stop practicing and start building? Apply to join DueSpace and
         get matched to a real project
       </p>
-      <button className="btn mt-4 w-63.75 h-8.25 border-none bg-[#7C3AED] text-[16px] text-white">
-        Apply to Join
-        <RiArrowRightLongFill className="inline-block size-6" />
-      </button>
+      <a href="https://tally.so/r/NpgNDQ">
+        <button className="btn mt-4 w-63.75 h-8.25 border-none bg-[#7C3AED] text-[16px] text-white">
+          Apply to Join
+          <RiArrowRightLongFill className="inline-block size-6" />
+        </button>
+      </a>
     </motion.section>
   );
 };

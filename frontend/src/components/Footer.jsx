@@ -15,22 +15,22 @@ const socialLinks = [
     icon: <FaWhatsapp />,
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/duespace/?viewAsMember=true",
     label: "LinkedIn",
     icon: <FiLinkedin />,
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/the_due_space?igsh=MWhzMDljM2J0YWFxcw==",
     label: "Instagram",
     icon: <FaInstagram />,
   },
   {
-    href: "#",
+    href: "https://github.com/DueSpace",
     label: "GitHub",
     icon: <FiGithub />,
   },
   {
-    href: "#",
+    href: "https://x.com/the_due_network?s=21&t=PjKx8CGWUy106A5w9upkVA",
     label: "X (Twitter)",
     icon: <VscTwitter />,
   },
@@ -50,16 +50,10 @@ export const Footer = () => {
       {/* Newsletter section */}
       <div className="mx-2 my-4">
         {/* Company logo */}
-        <img
-          src={Due}
-          alt="DueSpace"
-          className="ml-1 w-25"
-        />
+        <img src={Due} alt="DueSpace" className="ml-1 w-25" />
 
         {/* Newsletter heading */}
-        <p className="font-space mt-3 ml-0">
-          [GLOBAL DISPATCH]
-        </p>
+        <p className="font-space mt-3 ml-0">[GLOBAL DISPATCH]</p>
 
         {/* Newsletter description */}
         <p className="ml-1">
