@@ -10,7 +10,7 @@ import { LuFacebook } from "react-icons/lu";
 // Social media links
 const socialLinks = [
   {
-    href: "#",
+    href: "https://wa.me/2348102950051",
     label: "WhatsApp",
     icon: <FaWhatsapp />,
   },
