@@ -57,7 +57,7 @@ export const StructuredProductTeams = () => {
       {/* Heading */}
       <div className="md:grid md:grid-cols-[.92fr_1.08fr] md:items-center md:gap-12">
         <div>
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-black md:text-5xl">
+          <h1 className="mt-4 text-4xl font-bold leading-tight w-70 md:w-full text-black md:text-5xl">
             Your Product Idea Is Ready.{"  "}
             {/* <br className="sm:hidden" /> */}
             {/* <br /> */}
