@@ -59,11 +59,8 @@ export const StructuredProductTeams = () => {
         <div>
           <h1 className="mt-4 text-4xl font-bold leading-tight w-70 md:w-full text-black md:text-5xl">
             Your Product Idea Is Ready.{"  "}
-            {/* <br className="sm:hidden" /> */}
-            {/* <br /> */}
             <span className="block font-semibold text-3xl w-70 md:w-full md:text-4xl">
               Your Tech Team Should Be Too.
-              {/* <br className="sm:hidden" /> */}
             </span>
           </h1>
 
