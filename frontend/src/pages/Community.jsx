@@ -212,8 +212,8 @@ const marketing = [
 // ─── Reusable Member Card ────────────────────────────────────────────────────
 
 const MemberCard = ({ member }) => (
-  <div className="rounded-2xl bg-[linear-gradient(to_bottom,#0000004D_0%,#BA68C866_50%,#0000004D_100%)] p-px">
-    <div className="card rounded-2xl bg-[linear-gradient(to_bottom,#E2BCE8_0%,#E2BCE8_5%,#FFFFFF_13%,#FFFFFF_100%)] p-4 pb-5">
+  <div className="h-full rounded-2xl bg-[linear-gradient(to_bottom,#0000004D_0%,#BA68C866_50%,#0000004D_100%)] p-px">
+    <div className="card h-full rounded-2xl bg-[linear-gradient(to_bottom,#E2BCE8_0%,#E2BCE8_5%,#FFFFFF_13%,#FFFFFF_100%)] p-4 pb-5">
       {/* Avatar */}
       <img
         src={member.img}
@@ -241,22 +241,23 @@ const MemberCard = ({ member }) => (
           </div>
         ))}
       </div>
-
+      <div className="mt-auto">
       <hr className="text-[#7C3AED33] mt-5 mb-2" />
 
       {/* Projects */}
       <h1 className="font-bold">Project(s)</h1>
-      <div className="flex gap-4 mt-2 flex-wrap">
+      <div className="flex gap-2 mt-2 flex-wrap">
         {member.projects.map((proj, i) => (
           <div
             key={i}
-            className="font-semibold border text-center pt-2 px-2.5 rounded-xl leading-loose"
+            className="font-semibold border text-center pt-2 px-1 rounded-xl leading-loose"
           >
-            <p>{proj.name}</p>
-            <p className="text-sm">{proj.role}</p>
+            <p className="text-sm">{proj.name}</p>
+            <p className="text-xs">{proj.role}</p>
           </div>
         ))}
       </div>
+    </div>
     </div>
   </div>
 );
@@ -358,7 +359,7 @@ export const Community = () => {
       {/* ── Page Header — hidden when viewing all of a category ── */}
       {!viewAllCategory && (
         <>
-          <h2 className="mb-4 text-[32px] w-80 font-bold text-[#525252] font-manrope md:w-[58%] md:text-5xl">
+          <h2 className="mb-4 text-[32px] w-80 font-bold text-[#0B0F1A] font-manrope md:w-[58%] md:text-5xl">
             Meet the people building inside DueSpace
           </h2>
           <p className="text-4 w-84.25 mb-5 md:w-[65%] md:text-lg">
