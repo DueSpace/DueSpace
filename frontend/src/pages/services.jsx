@@ -1,17 +1,39 @@
 import { motion } from "framer-motion";
 import { RiArrowRightLongFill } from "react-icons/ri";
+import { SEO } from "../components/SEO";
 // assets imports
 import Mmachi from "../assets/MmachiBrand.png";
 
 const Services = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl md:max-w-295 md:my-16"
-    >
+    <>
+      <SEO
+        title="Our Services | DueSpace Labs & DueSpace Studios Capabilities"
+        description="Discover what DueSpace Labs and DueSpace Studios ship: web applications, product MVPs, UI/UX design, brand identity, motion graphics, and video production in structured sprints."
+        keywords="DueSpace Services, DueSpace Labs, DueSpace Studios, Web Applications, Product MVPs, UI UX Design, Brand Identity, Motion Graphics, Video Production, Software Engineering"
+        url="https://duespace.com/services"
+        image="/Logo.jpg"
+        type="website"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "DueSpace Capabilities",
+          "provider": {
+            "@type": "Organization",
+            "name": "DueSpace",
+            "url": "https://duespace.com"
+          },
+          "serviceType": "Software Development & Design Services",
+          "description": "Uncompromised product development, web applications, branding, and motion design shipped to production."
+        }}
+      />
+      <motion.section
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -30 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="mx-auto my-10 w-[90%] max-w-2xl md:max-w-295 md:my-16"
+      >
       {/* Section Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -75,6 +97,7 @@ const Services = () => {
         </button>
       </a>
     </motion.section>
+    </>
   );
 };
 export default Services;

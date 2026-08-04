@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { IoRocketOutline } from "react-icons/io5";
 import { GoArrowRight } from "react-icons/go";
+import { SEO } from "../components/SEO";
 
 /**
  * GetInTouch Component
@@ -8,13 +9,29 @@ import { GoArrowRight } from "react-icons/go";
  */
 export const GetInTouch = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
-    >
+    <>
+      <SEO
+        title="Get In Touch | DueSpace - Connect with Our Ecosystem"
+        description="Ready to start a new project brief or join the DueSpace talent network? Connect with our team for technical execution, creative design, or ecosystem opportunities."
+        keywords="Contact DueSpace, Start a Project, Join DueSpace Network, Creative Talent, Tech Consulting, Africa Tech Partner, Product Sprints"
+        url="https://duespace.com/get-in-touch"
+        image="/Logo.jpg"
+        type="website"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Get In Touch - DueSpace",
+          "description": "Select your profile to initialize communication with the DueSpace ecosystem.",
+          "url": "https://duespace.com/get-in-touch"
+        }}
+      />
+      <motion.section
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -30 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
+      >
       {/* Header / System Gateway Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -108,5 +125,6 @@ export const GetInTouch = () => {
         </p>
       </div>
     </motion.section>
+    </>
   );
 };

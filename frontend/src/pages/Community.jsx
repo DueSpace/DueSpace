@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { SEO } from "../components/SEO";
 // image imports
 import Desire from "../assets/community/Desire.png";
 import Ebube from "../assets/community/Ebube.png";
@@ -344,13 +345,29 @@ export const Community = () => {
   const marketCards = filterMembers(marketing, viewAllCategory === "Marketing");
 
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-manrope md:max-w-295 md:my-16"
-    >
+    <>
+      <SEO
+        title="Meet Our Builders | DueSpace Community"
+        description="Meet the developers, UI/UX designers, product managers, and growth strategists building real-world digital products inside the DueSpace community."
+        keywords="DueSpace Builders, DueSpace Community, Tech Talent Directory, African Developers, UI UX Designers, Product Managers, Growth Analysts, Software Engineers Africa"
+        url="https://duespace.com/community"
+        image="/Logo.jpg"
+        type="website"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Meet Our Builders - DueSpace Community",
+          "description": "Directory of tech professionals and creative builders inside the DueSpace network.",
+          "url": "https://duespace.com/community"
+        }}
+      />
+      <motion.section
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -30 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="mx-auto my-10 w-[90%] max-w-2xl font-manrope md:max-w-295 md:my-16"
+      >
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
           OUR BUILDERS
@@ -502,5 +519,6 @@ export const Community = () => {
         </>
       )}
     </motion.section>
+    </>
   );
 };

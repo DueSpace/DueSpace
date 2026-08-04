@@ -1,16 +1,33 @@
 import { RiArrowRightLongFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { SEO } from "../components/SEO";
 
 const OurStory = () => {
   return (
-    // Our story scection
-    <motion.section
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
-    >
+    <>
+      <SEO
+        title="Our Story | DueSpace - Bridging Talent and Startup Execution"
+        description="Discover how DueSpace was born to bridge the gap between African tech professionals and founders needing execution partners. Learn about our origin, mission, core beliefs, Labs, and Studios."
+        keywords="DueSpace Story, Desire Levi, African Tech Ecosystem, Startup Founders, Tech Talent Africa, DueSpace Labs, DueSpace Studios, Tech Career Growth"
+        url="https://duespace.com/our-story"
+        image="/Logo.jpg"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Our Story - DueSpace",
+          "description": "DueSpace is where African tech professionals come to build real things, grow with real teams, and execute startup projects.",
+          "url": "https://duespace.com/our-story"
+        }}
+      />
+      {/* Our story section */}
+      <motion.section
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -30 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="mx-auto my-10 w-[90%] max-w-2xl font-sans md:max-w-295 md:my-16"
+      >
       {/* Section Badge */}
       <div className="mb-4">
         <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
@@ -159,6 +176,7 @@ const OurStory = () => {
         </button>
       </a>
     </motion.section>
+    </>
   );
 };
 
