@@ -280,7 +280,7 @@ export const HowWeWork = () => {
       </p>
 
       {/* steps list */}
-      <div className="space-y-0 md:grid md:grid-cols-5 md:gap-4">
+      <div className="space-y-0 md:grid md:grid-cols-5 md:gap-4 md:text-center">
         {WORK_STEPS_DATA.map((step, index) => (
           <WorkStep
             key={step.id}
