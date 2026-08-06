@@ -126,7 +126,7 @@ const designers = [
   },
   {
     img: Chigozie,
-    name: "Chigozie Nze",
+    name: "Chigozie Nzeh",
     role: <>Graphic/Brand Designer</>,
     bio: "Crafting distinctive brand identities and visual experiences that help businesses stand out and connect with their audience.",
     tags: ["Adobe Photoshop", "Canva", "Graphics"],
@@ -243,22 +243,22 @@ const MemberCard = ({ member }) => (
         ))}
       </div>
       <div className="mt-auto">
-      <hr className="text-[#7C3AED33] mt-5 mb-2" />
+        <hr className="text-[#7C3AED33] mt-5 mb-2" />
 
-      {/* Projects */}
-      <h1 className="font-bold">Project(s)</h1>
-      <div className="flex gap-2 mt-2 flex-wrap">
-        {member.projects.map((proj, i) => (
-          <div
-            key={i}
-            className="font-semibold border text-center pt-2 px-1 rounded-xl leading-loose"
-          >
-            <p className="text-sm">{proj.name}</p>
-            <p className="text-xs">{proj.role}</p>
-          </div>
-        ))}
+        {/* Projects */}
+        <h1 className="font-bold">Project(s)</h1>
+        <div className="flex gap-2 mt-2 flex-wrap">
+          {member.projects.map((proj, i) => (
+            <div
+              key={i}
+              className="font-semibold border text-center pt-2 px-1 rounded-xl leading-loose"
+            >
+              <p className="text-sm">{proj.name}</p>
+              <p className="text-xs">{proj.role}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   </div>
 );
@@ -356,9 +356,10 @@ export const Community = () => {
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "name": "Meet Our Builders - DueSpace Community",
-          "description": "Directory of tech professionals and creative builders inside the DueSpace network.",
-          "url": "https://duespace.com/community"
+          name: "Meet Our Builders - DueSpace Community",
+          description:
+            "Directory of tech professionals and creative builders inside the DueSpace network.",
+          url: "https://duespace.com/community",
         }}
       />
       <motion.section
@@ -368,157 +369,159 @@ export const Community = () => {
         transition={{ duration: 0.3, ease: "easeOut" }}
         className="mx-auto my-10 w-[90%] max-w-2xl font-manrope md:max-w-295 md:my-16"
       >
-      <div className="mb-4">
-        <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
-          OUR BUILDERS
-        </span>
-      </div>
-      {/* ── Page Header — hidden when viewing all of a category ── */}
-      {!viewAllCategory && (
-        <>
-          <h2 className="mb-4 text-[32px] w-80 font-bold text-[#0B0F1A] font-manrope md:w-[58%] md:text-5xl">
-            Meet the people building inside DueSpace
-          </h2>
-          <p className="text-4 w-84.25 mb-5 md:w-[65%] md:text-lg">
-            Designers, developers, product managers and creatives collaborating
-            on real products through structured sprints.
-          </p>
-        </>
-      )}
+        <div className="mb-4">
+          <span className="badge badge-outline rounded-full border border-[#7C3AED] p-5 font-space text-xs text-[#7C3AED]">
+            OUR BUILDERS
+          </span>
+        </div>
+        {/* ── Page Header — hidden when viewing all of a category ── */}
+        {!viewAllCategory && (
+          <>
+            <h2 className="mb-4 text-[32px] w-80 font-bold text-[#0B0F1A] font-manrope md:w-[58%] md:text-5xl">
+              Meet the people building inside DueSpace
+            </h2>
+            <p className="text-4 w-84.25 mb-5 md:w-[65%] md:text-lg">
+              Designers, developers, product managers and creatives
+              collaborating on real products through structured sprints.
+            </p>
+          </>
+        )}
 
-      {/* ── Search Bar ── */}
-      <div className="relative mb-4">
-        {/* Search icon inside the input on the left */}
-        <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-4 pointer-events-none" />
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search builder..."
-          className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#7C3AED] transition-colors"
-        />
-      </div>
+        {/* ── Search Bar ── */}
+        <div className="relative mb-4">
+          {/* Search icon inside the input on the left */}
+          <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-4 pointer-events-none" />
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search builder..."
+            className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:border-[#7C3AED] transition-colors"
+          />
+        </div>
 
-      {/* ── Category Filter Tabs ── */}
-      <div className="flex gap-2 flex-wrap mb-2">
-        {FILTERS.map((f) => (
-          <button
-            key={f}
-            onClick={() => setActiveFilter(f)}
-            className={`py-1.5 px-4 rounded-xl text-sm font-semibold transition-colors cursor-pointer
+        {/* ── Category Filter Tabs ── */}
+        <div className="flex gap-2 flex-wrap mb-2">
+          {FILTERS.map((f) => (
+            <button
+              key={f}
+              onClick={() => setActiveFilter(f)}
+              className={`py-1.5 px-4 rounded-xl text-sm font-semibold transition-colors cursor-pointer
               ${
                 activeFilter === f
                   ? "bg-[#7C3AED] text-white"
                   : "bg-[#7C3AED1A] text-[#7C3AED] hover:bg-[#7C3AED33]"
               }`}
-          >
-            {f}
-          </button>
-        ))}
-      </div>
+            >
+              {f}
+            </button>
+          ))}
+        </div>
 
-      {/* ── Developers Section ── */}
-      {showSection("Development") && (
-        <>
-          <SectionHeader
-            icon={<FaCode className="text-[#7C3AED] size-8" />}
-            label="Developers"
-            showViewAll={developers.length >= 3}
-            isViewingAll={viewAllCategory === "Development"}
-            onViewAll={() =>
-              setViewAllCategory(
-                viewAllCategory === "Development" ? null : "Development",
-              )
-            }
-          />
-          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
-            {devCards.length > 0 ? (
-              devCards.map((m, i) => <MemberCard key={i} member={m} />)
-            ) : (
-              <p className="text-sm text-gray-400">
-                No developers match your search.
-              </p>
-            )}
-          </div>
-        </>
-      )}
+        {/* ── Developers Section ── */}
+        {showSection("Development") && (
+          <>
+            <SectionHeader
+              icon={<FaCode className="text-[#7C3AED] size-8" />}
+              label="Developers"
+              showViewAll={developers.length >= 3}
+              isViewingAll={viewAllCategory === "Development"}
+              onViewAll={() =>
+                setViewAllCategory(
+                  viewAllCategory === "Development" ? null : "Development",
+                )
+              }
+            />
+            <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
+              {devCards.length > 0 ? (
+                devCards.map((m, i) => <MemberCard key={i} member={m} />)
+              ) : (
+                <p className="text-sm text-gray-400">
+                  No developers match your search.
+                </p>
+              )}
+            </div>
+          </>
+        )}
 
-      {/* ── Designers Section ── */}
-      {showSection("Design") && (
-        <>
-          <SectionHeader
-            icon={<LiaPenNibSolid className="text-[#7C3AED] size-11" />}
-            label="Designers"
-            showViewAll={designers.length >= 3}
-            isViewingAll={viewAllCategory === "Design"}
-            onViewAll={() =>
-              setViewAllCategory(viewAllCategory === "Design" ? null : "Design")
-            }
-          />
-          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
-            {designCards.length > 0 ? (
-              designCards.map((m, i) => <MemberCard key={i} member={m} />)
-            ) : (
-              <p className="text-sm text-gray-400">
-                No designers match your search.
-              </p>
-            )}
-          </div>
-        </>
-      )}
+        {/* ── Designers Section ── */}
+        {showSection("Design") && (
+          <>
+            <SectionHeader
+              icon={<LiaPenNibSolid className="text-[#7C3AED] size-11" />}
+              label="Designers"
+              showViewAll={designers.length >= 3}
+              isViewingAll={viewAllCategory === "Design"}
+              onViewAll={() =>
+                setViewAllCategory(
+                  viewAllCategory === "Design" ? null : "Design",
+                )
+              }
+            />
+            <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
+              {designCards.length > 0 ? (
+                designCards.map((m, i) => <MemberCard key={i} member={m} />)
+              ) : (
+                <p className="text-sm text-gray-400">
+                  No designers match your search.
+                </p>
+              )}
+            </div>
+          </>
+        )}
 
-      {/* ── Product Section ── */}
-      {showSection("Product") && (
-        <>
-          <SectionHeader
-            icon={<BsBoxSeam className="text-[#7C3AED] size-8" />}
-            label="Product"
-            showViewAll={product.length >= 3}
-            isViewingAll={viewAllCategory === "Product"}
-            onViewAll={() =>
-              setViewAllCategory(
-                viewAllCategory === "Product" ? null : "Product",
-              )
-            }
-          />
-          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
-            {productCards.length > 0 ? (
-              productCards.map((m, i) => <MemberCard key={i} member={m} />)
-            ) : (
-              <p className="text-sm text-gray-400">
-                No product members match your search.
-              </p>
-            )}
-          </div>
-        </>
-      )}
+        {/* ── Product Section ── */}
+        {showSection("Product") && (
+          <>
+            <SectionHeader
+              icon={<BsBoxSeam className="text-[#7C3AED] size-8" />}
+              label="Product"
+              showViewAll={product.length >= 3}
+              isViewingAll={viewAllCategory === "Product"}
+              onViewAll={() =>
+                setViewAllCategory(
+                  viewAllCategory === "Product" ? null : "Product",
+                )
+              }
+            />
+            <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
+              {productCards.length > 0 ? (
+                productCards.map((m, i) => <MemberCard key={i} member={m} />)
+              ) : (
+                <p className="text-sm text-gray-400">
+                  No product members match your search.
+                </p>
+              )}
+            </div>
+          </>
+        )}
 
-      {/* ── Marketing Section ── */}
-      {showSection("Marketing") && (
-        <>
-          <SectionHeader
-            icon={<RiLightbulbFlashFill className="text-[#7C3AED] size-9" />}
-            label="Marketing"
-            showViewAll={marketing.length >= 3}
-            isViewingAll={viewAllCategory === "Marketing"}
-            onViewAll={() =>
-              setViewAllCategory(
-                viewAllCategory === "Marketing" ? null : "Marketing",
-              )
-            }
-          />
-          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
-            {marketCards.length > 0 ? (
-              marketCards.map((m, i) => <MemberCard key={i} member={m} />)
-            ) : (
-              <p className="text-sm text-gray-400">
-                No marketing members match your search.
-              </p>
-            )}
-          </div>
-        </>
-      )}
-    </motion.section>
+        {/* ── Marketing Section ── */}
+        {showSection("Marketing") && (
+          <>
+            <SectionHeader
+              icon={<RiLightbulbFlashFill className="text-[#7C3AED] size-9" />}
+              label="Marketing"
+              showViewAll={marketing.length >= 3}
+              isViewingAll={viewAllCategory === "Marketing"}
+              onViewAll={() =>
+                setViewAllCategory(
+                  viewAllCategory === "Marketing" ? null : "Marketing",
+                )
+              }
+            />
+            <div className="space-y-4 md:grid md:grid-cols-3 md:gap-5 md:space-y-0">
+              {marketCards.length > 0 ? (
+                marketCards.map((m, i) => <MemberCard key={i} member={m} />)
+              ) : (
+                <p className="text-sm text-gray-400">
+                  No marketing members match your search.
+                </p>
+              )}
+            </div>
+          </>
+        )}
+      </motion.section>
     </>
   );
 };
