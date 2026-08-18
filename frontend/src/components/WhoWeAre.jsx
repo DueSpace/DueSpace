@@ -21,8 +21,8 @@ export const WhoWeAre = () => {
       <div className="my-2">
         <p className="mb-3 w-[79%] md:w-[65%]">
           DueSpace connects startups with multidisciplinary product teams while
-          helping emerging African professionals gain real-world experience
-          through client delivery.
+          helping emerging professionals gain real-world experience through
+          client delivery.
         </p>
 
         {/* Link to About/Story page */}
