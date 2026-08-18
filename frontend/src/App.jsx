@@ -10,6 +10,8 @@ import Services from "./pages/services";
 import { Community } from "./pages/Community";
 import { Footer } from "./components/Footer";
 
+import { Prospect } from "./pages/Prospect";
+
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,6 +24,8 @@ function AnimatedRoutes() {
         <Route path="/get-in-touch" element={<GetInTouch />} />
         <Route path="/community" element={<Community />} />
         <Route path="/services" element={<Services />} />
+
+        <Route path="/prospect" element={<Prospect />} />
       </Routes>
     </AnimatePresence>
   );
