@@ -26,7 +26,7 @@ export const NavBar = () => {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: "Join Our Network", path: "/" },
+    { name: "Join Our Network", path: "https://join.duespace.com" },
     { name: "Services", path: "/services" },
     { name: "Get in Touch", path: "/get-in-touch" },
     { name: "Community", path: "/community" },
