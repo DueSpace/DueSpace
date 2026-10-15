@@ -76,14 +76,14 @@ export const StructuredProductTeams = () => {
 
           <div className="my-5 md:flex md:gap-3">
             <a href="https://tally.so/r/ODg90k">
-              <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-7 text-2xl font-medium text-center text-white w-[70%] md:w-auto md:text-lg">
+              <button className="btn rounded-2xl border border-[#7C3AED] bg-[#7C3AED] px-4 py-6 text-2xl font-medium text-center text-white w-[70%] md:w-auto md:text-lg">
                 Start a project
                 <RiArrowRightLongFill className="mt-1.75 size-6" />
               </button>
             </a>
 
             <a href="#how-we-work">
-              <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-7 text-2xl font-semibold text-black w-[70%] md:mt-0 md:w-auto md:text-lg">
+              <button className="btn mt-2 rounded-2xl border border-[#7C3AED] px-4 py-6 text-2xl font-semibold text-black w-[70%] md:mt-0 md:w-auto md:text-lg">
                 See How We Work
               </button>
             </a>

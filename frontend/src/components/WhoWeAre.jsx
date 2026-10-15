@@ -13,8 +13,7 @@ export const WhoWeAre = () => {
 
       {/* Section Heading */}
       <h2 className="text-xl font-bold text-gray-900 md:text-3xl">
-        Your Partner In Building What's <br />
-        Next
+        Your Partner In Building What's Next
       </h2>
 
       {/* Section Description */}
