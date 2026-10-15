@@ -101,8 +101,8 @@ export const StructuredProductTeams = () => {
       </div>
       {/* Trusted By */}
 
-      <div className="mt-8 bg-white p-2 pb-6 shadow-sm md:mt-14 md:px-8 md:py-6">
-        <h3 className="mb-6 text-center text-sm font-semibold uppercase text-gray-900">
+      <div className="mt-8 bg-white p-2 pb-4 shadow-sm md:mt-14 md:px-8 md:py-2">
+        <h3 className="mb-4 text-center text-sm font-semibold uppercase text-gray-900">
           Trusted By Startups Building
         </h3>
 
